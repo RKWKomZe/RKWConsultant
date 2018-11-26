@@ -1,0 +1,41 @@
+
+<f:layout name="Default" />
+
+This template displays a NEW form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+New.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+	<!-- Introduction -->
+	<h2><f:translate key="templates_consultantService_choose.headline" /></h2>
+	<f:translate key="templates_consultantService_choose.steps" />
+	<p><f:translate key="templates_consultantService_choose.description" /></p>
+
+	<!-- Messages -->
+	<f:flashMessages renderMode="div" />
+	<f:render partial="FormErrors" arguments="{object:BasicService}" />
+
+	<!-- Form -->
+	<f:form id="rkw-consultant-form"  action="new" enctype="multipart/form-data"  name="basicService" object="{basicService}" arguments="{consultant:consultant}">
+
+		<p class="v320-1">
+			<f:form.select name="basicService" options="{basicServiceList}" optionLabelField="title" />
+		</p>
+		<p class="v320-1">
+			<f:link.action class="button secondary" action="myList" controller="Consultant" arguments="{consultant:consultant}">
+				<span><f:translate key="templates_consultantService_choose.escape" /></span>
+			</f:link.action>
+			<button type="submit" class="button">
+				<span><f:translate key="templates_consultantService_choose.step3" /></span>
+			</button>
+		</p>
+	</f:form>
+</f:section>

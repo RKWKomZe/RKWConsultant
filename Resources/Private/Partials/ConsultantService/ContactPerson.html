@@ -1,0 +1,124 @@
+{namespace vh=RKW\RkwConsultant\ViewHelpers}
+
+<!-- item iud -->
+<f:if condition="{contactPerson.uid}">
+	<f:form.hidden property="contactPerson.{iteration}" value="{contactPerson}" />
+</f:if>
+
+<!-- label "Kontaktperson 1", "Kontaktperson 2" ... -->
+<h4>
+	<f:translate key="tx_rkwconsultant_domain_model_contactperson" /> <vh:increment integer='{iteration}'/>
+	<f:if condition="{iteration} >= {settings.mandatoryFields.numberOfMandatoryContactPersons}">
+		<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+	</f:if>
+</h4>
+
+<div class="v320-1-of-2">
+	<!--
+	<div class="v320-1">
+		<label class="form-label" for="contactPerson.{iteration}.salutation">
+			<f:translate key="tx_rkwconsultant_domain_model_contactperson.salutation" />
+			<f:if condition="<vh:isMandatoryField fieldName='salutation' mandatoryFields='{settings.mandatoryFields.contactPerson}' />">
+				<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+			</f:if>
+		</label>
+		<f:form.select id="contactPerson.{iteration}.salutation" value="{contactPerson.salutation}" prependOptionLabel="<f:translate key='tx_rkwconsultant_fluid.please_select' />" prependOptionValue="0" property="contactPerson.{iteration}.salutation" optionLabelField="name" name="contactPerson.{iteration}.salutation" optionValueField="contactPerson.{iteration}.salutation" options="{1: 'Frau', 99: 'Herr'}" />
+	</div>
+	-->
+
+	<!--
+	<div class="v320-1">
+		<label class="form-label" for="contactPerson.{iteration}.title">
+			<f:translate key="tx_rkwconsultant_domain_model_contactperson.title" />
+			<vh:isMandatoryField fieldName='title' mandatoryFields="{settings.mandatoryFields.contactPerson}" />
+		</label>
+		<f:form.select value="{contactPerson.title}" prependOptionLabel="<f:translate key='tx_rkwconsultant_fluid.please_select' />" prependOptionValue="0" property="contactPerson.{iteration}.title"  name="contactPerson.{iteration}.title" options="<vh:explode string='{settings.consultant.title}' />" optionValueField="title" optionLabelField="name" />
+	</div>
+	-->
+
+	<div class="v320-1">
+		<label class="form-label" for="contactPerson.{iteration}.firstName">
+			<f:translate key="tx_rkwconsultant_domain_model_contactperson.first_name" />
+			<f:if condition="<vh:isMandatoryField fieldName='firstName' mandatoryFields='{settings.mandatoryFields.contactPerson}' />">
+				<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+			</f:if>
+		</label>
+		<f:form.textfield id="contactPerson.{iteration}.firstName" value="{contactPerson.firstName}" property="contactPerson.{iteration}.firstName" name="contactPerson.{iteration}.firstName" />
+	</div>
+
+	<div class="v320-1">
+		<label class="form-label" for="contactPerson.{iteration}.lastName">
+			<f:translate key="tx_rkwconsultant_domain_model_contactperson.last_name" />
+			<f:if condition="<vh:isMandatoryField fieldName='lastName' mandatoryFields='{settings.mandatoryFields.contactPerson}' />">
+				<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+			</f:if>
+		</label>
+		<f:form.textfield id="contactPerson.{iteration}.lastName" value="{contactPerson.lastName}" property="contactPerson.{iteration}.lastName" name="contactPerson.{iteration}.lastName" />
+	</div>
+</div>
+
+<div class="v320-2-of-2">
+
+	<div class="v320-1">
+		<label class="form-label" for="contactPerson.{iteration}.email">
+			<f:translate key="tx_rkwconsultant_domain_model_contactperson.email" />
+			<f:if condition="<vh:isMandatoryField fieldName='email' mandatoryFields='{settings.mandatoryFields.contactPerson}' />">
+				<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+			</f:if>
+		</label>
+		<f:form.textfield id="contactPerson.{iteration}.email" value="{contactPerson.email}" property="contactPerson.{iteration}.email" name="contactPerson.{iteration}.email" />
+	</div>
+
+	<div class="v320-1">
+		<label class="form-label" for="contactPerson.{iteration}.telephone">
+			<f:translate key="tx_rkwconsultant_domain_model_contactperson.telephone" />
+			<f:if condition="<vh:isMandatoryField fieldName='telephone' mandatoryFields='{settings.mandatoryFields.contactPerson}' />">
+				<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+			</f:if>
+		</label>
+		<f:form.textfield id="contactPerson.{iteration}.telephone" value="{contactPerson.telephone}" property="contactPerson.{iteration}.telephone" name="contactPerson.{iteration}.telephone" />
+	</div>
+
+</div>
+
+
+<!-- image -->
+<!--
+<p class="v320-1">
+	<f:if condition="{contactPerson.image}">
+		<f:then>
+			<f:for each="{contactPerson.image}" as="image">
+
+				<label class="form-label"><f:translate key="tx_rkwconsultant_domain_model_contactperson.image" />
+					<f:if condition="{settings.mandatoryFields.contactPersonImageMandatory}">
+						<f:else>
+							<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+						</f:else>
+					</f:if>
+				</label>
+				<f:image class="image{iteration}"  src="{image.uid}" alt="{image.originalResource.name}" treatIdAsReference="1" />
+				<f:form.upload class="rkwconsultant-hidden imageUpload{iteration}" property="contactPerson.{iteration}.imageUpload.1" name="imageUpload"/>
+
+				<a class="removeImage{iteration} button secondary" href="<f:uri.action action='prepareDelete' controller='Consultant' extensionName='rkwConsultant' pluginName='Rkwconsultantmyconsultant' absolute='TRUE' pageUid='{settings.pageUid}' additionalParams='{type: settings.ajaxTypeNum, tx_rkwconsultant_rkwconsultantmyconsultant: {contactperson: contactPerson.uid, fileuid: image.uid, imagenumber: iteration}}' section='rkw-consultant' />" class="rkwconsultant-delete" data-featherlight>
+					<span>
+						<f:translate key="tx_rkwconsultant_domain_model_contactperson.image_remove" />
+					</span>
+				</a>
+
+			</f:for>
+		</f:then>
+		<f:else>
+			<label class="form-label"><f:translate key="tx_rkwconsultant_domain_model_contactperson.image" />
+				<f:if condition="{settings.mandatoryFields.contactPersonImageMandatory}">
+					<f:else>
+						<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+					</f:else>
+				</f:if>
+			</label>
+			<f:form.upload id="imageUpload" property="contactPerson.{iteration}.imageUpload.1" name="imageUpload"/>
+		</f:else>
+	</f:if>
+</p>
+-->
+
+<p>&nbsp;</p>

@@ -1,0 +1,108 @@
+{namespace vh=RKW\RkwConsultant\ViewHelpers}
+
+<!-- Infobox consultants -->
+<div class="project-details info-box">
+
+	<div class="box-content full">
+
+		<!-- Basic information -->
+		<div class="project-teaser">
+			<f:if condition="{consultant.address}">
+				{consultant.address},
+			</f:if>
+			<f:if condition="{consultant.zip}">
+				{consultant.zip}
+			</f:if>
+			<f:if condition="{consultant.city}">
+				{consultant.city}<br /><br>
+			</f:if>
+			<f:if condition="{consultant.telephone}">
+				<strong><f:translate key="tx_rkwconsultant_domain_model_consultant.telephone" />:</strong> {consultant.telephone}<br />
+			</f:if>
+			<f:if condition="{consultant.fax}">
+				<strong><f:translate key="tx_rkwconsultant_domain_model_consultant.fax" />:</strong> {consultant.fax}<br/>
+			</f:if>
+            <f:if condition="{consultant.email}">
+                <strong><f:translate key="tx_rkwconsultant_domain_model_consultant.email" />:</strong> <f:link.email email="{consultant.email}" /><br/>
+            </f:if>
+			<f:if condition="{consultant.www}">
+				<strong><f:translate key="tx_rkwconsultant_domain_model_consultant.www" />:</strong> <f:link.external uri="{consultant.www}" target="_blank">{consultant.www}</f:link.external>
+			</f:if>
+		</div>
+
+		<!-- More Button -->
+		<f:if condition="<f:count>{consultant.file}</f:count> > 0">
+			<f:then>
+				<f:render section="moreButton" />
+			</f:then>
+			<f:else>
+				<f:if condition="{consultant.facebook}">
+					<f:then>
+						<f:render section="moreButton" />
+					</f:then>
+					<f:else>
+						<f:if condition="{consultant.twitter}">
+							<f:then>
+								<f:render section="moreButton" />
+							</f:then>
+							<f:else>
+								<f:if condition="{consultant.googlePlus}">
+									<f:then>
+										<f:render section="moreButton" />
+									</f:then>
+								</f:if>
+							</f:else>
+						</f:if>
+					</f:else>
+				</f:if>
+			</f:else>
+		</f:if>
+	</div>
+
+	<!-- tab for downloads of consultant -->
+	<div class="toggled-content" data-tab="tab-1" id="tab-1" role="tabpanel">
+		<div class="box-content infobox-content wysiwyg">
+
+			<!-- Social Media -->
+			<p>
+				<f:if condition="{consultant.facebook}">
+					<strong><f:translate key="tx_rkwconsultant_domain_model_consultant.facebook" />:</strong>&nbsp;<f:link.external uri="{consultant.facebook}" target="_blank">{consultant.facebook}</f:link.external>
+					<br/>
+				</f:if>
+
+				<f:if condition="{consultant.facebook}">
+					<strong><f:translate key="tx_rkwconsultant_domain_model_consultant.twitter" />:</strong>&nbsp;<f:link.external uri="{consultant.twitter}" target="_blank">{consultant.twitter}</f:link.external>
+					<br/>
+				</f:if>
+
+				<f:if condition="{consultant.googlePlus}">
+					<strong><f:translate key="tx_rkwconsultant_domain_model_consultant.google_plus" />:</strong>&nbsp;<f:link.external uri="{consultant.googlePlus}" target="_blank">{consultant.googlePlus}</f:link.external>
+					<br/>
+				</f:if>
+			</p>
+
+			<!-- Downloads -->
+			<f:if condition="<f:count>{consultant.file}</f:count> > 0">
+				<ul class="link-list">
+					<f:for each="{consultant.file}" as="file">
+						<li>
+							<a href="{file.originalResource.publicUrl}">{file.originalResource.name}</a>
+						</li>
+					</f:for>
+				</ul>
+			</f:if>
+		</div>
+	</div>
+</div>
+
+
+
+<f:section name="moreButton" >
+	<div class="buttons-set">
+		<p>
+			<a class="accordion-button toggle-project button" data-toggle="tab-1" role="tab" aria-controls="tab-1" href="#" >
+				<span class="icon-arrow-right" ><f:translate key="templates_consultant_info.labelMore" /></span>
+			</a>
+		</p>
+	</div>
+</f:section>

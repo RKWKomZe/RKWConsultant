@@ -1,0 +1,13 @@
+{namespace vh=RKW\RkwConsultant\ViewHelpers}
+{namespace vhGeo=RKW\RkwGeolocation\ViewHelpers}
+<!-- Google Maps Script -->
+
+<f:if condition="<vh:and and1='{consultant.longitude}' and2='{consultant.latitude}' />">
+	<!-- show map if geo-data is set -->
+	<f:then>
+        <vhGeo:maps longitude="{consultant.longitude}" latitude="{consultant.latitude}"  />
+	</f:then>
+	<f:else>
+        <vhGeo:maps address="Germany" zoom="5" noMarker="true" />
+	</f:else>
+</f:if>

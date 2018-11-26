@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-09-21T15:09:54Z" product-name="rkw_consultant">
+		<header/>
+		<body>
+			<trans-unit id="further_informations.description">
+				<source>furtherInformations</source>
+			</trans-unit>
+			<trans-unit id="basic_service.description">
+				<source>basicService</source>
+			</trans-unit>
+			<trans-unit id="qualification.description">
+				<source>qualification</source>
+			</trans-unit>
+			<trans-unit id="sub_service.description">
+				<source>subService</source>
+			</trans-unit>
+			<trans-unit id="contact_person.description">
+				<source>contactPerson</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,44 @@
+
+<f:layout name="Default" />
+
+This template displays a NEW form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        New.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+	<h2><f:translate key="templates_consultant_new.headline" /></h2>
+	<f:translate key="templates_consultant_new.steps" />
+	<p><f:translate key="templates_consultant_new.introduction" /></p>
+
+	<f:flashMessages renderMode="div" />
+	<f:render partial="FormErrors" arguments="{object:Consultant}" />
+
+	<f:form class="form-fields" action="create" enctype="multipart/form-data" name="consultant" object="{consultant}">
+
+		<f:if condition="{userMayCreateFurtherProfiles}" >
+			<f:then>
+				<f:render partial="Consultant/FormFields" arguments="{_all}"/>
+
+				<div class="v320-1">
+					<f:link.action class="button secondary" action="myList" controller="Consultant" arguments="{consultant:consultant}">
+						<span><f:translate key="templates_consultant_new.back" /></span>
+					</f:link.action>
+					<button type="submit" class="button" name="final">
+						<span><f:translate key="templates_consultant_new.step2" /></span>
+					</button>
+				</div>
+			</f:then>
+			<f:else>
+				<em><f:translate key="templates_consultant_new.no_more_profiles" /></em>
+			</f:else>
+		</f:if>
+	</f:form>
+</f:section>

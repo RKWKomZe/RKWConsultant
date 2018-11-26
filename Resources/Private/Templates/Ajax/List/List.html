@@ -1,0 +1,15 @@
+<f:if condition="{consultantList}">
+    <f:then>
+        <div class="boxes-grid" id="tx-rkwconsultant-grid-section">
+            <f:render partial="Consultant/Listing" arguments="{_all}" />
+        </div>
+    </f:then>
+    <f:else>
+        <div class="no-search-results first-letter-normal content content-box">
+            <div class="csc-default csc-element-n1">
+                <h3><strong><f:translate key="templates_consultant_list.noResults" extensionName="RkwConsultant" /></strong></h3>
+                <p><f:translate key="templates_consultant_list.noResultsDetails" extensionName="RkwConsultant" /></p>
+            </div>
+        </div>
+    </f:else>
+</f:if>

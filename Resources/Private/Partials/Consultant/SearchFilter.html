@@ -1,0 +1,16 @@
+<!-- search form -->
+<f:form action="filter" controller="Ajax" extensionName="RkwConsultant" pluginName="Rkwconsultant" name="searchForm" id="search-form" class="ajax" method="post" noCacheHash="TRUE" additionalAttributes="{role :'search'}">
+    <div class="filter search-filter">
+        <div>
+            <f:form.textfield name="location" placeholder="<f:translate key='partials_consultant_searchFilter.placeholder_address' />" type="search" />
+            <button class="button" type="submit">
+                <span><f:translate key="partials_consultant_searchFilter.search" /></span>
+            </button>
+        </div>
+    </div>
+    <f:form.textfield name="page" value="{page}" type="hidden" />
+    <f:form.textfield name="networkOnly" value="{networkOnly}" type="hidden" />
+
+    <!-- Override typeNum for AJAX -->
+    <input name="type" value="{typeNum}" type="hidden" >
+</f:form>

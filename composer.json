@@ -1,0 +1,42 @@
+{
+    "name": "rkw/rkw-consultant",
+    "type": "typo3-cms-extension",
+    "description": "List and details for authors and employees",
+    "homepage": "https://www.rkw-kompetenzzentrum.de",
+    "license": ["GPL-2.0+"],
+    "keywords": ["TYPO3 CMS", "RKW", "Consultant List", "Consultant Location Search"],
+    "support": {
+        "email": "developer@steffenkroggel.de"
+    },
+    "authors": [
+        {
+            "name": "Steffen Kroggel",
+            "email": "developer@steffenkroggel.de",
+            "homepage": "http://www.steffenkroggel.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Maximilian Fäßler",
+            "email": "maximilian@faesslerweb.de",
+            "homepage": "https://faesslerweb.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^7.6.0 || ^8.7.0",
+         "rkw/rkw-basics": "~7.6.12", // >=7.6.12 <7.6.99
+         "rkw/rkw-mailer": "~7.6.0", // >=7.6.0 <7.6.99
+         "rkw/rkw-registration": "~7.6.10", // >=7.6.10 <7.6.99
+         "rkw/rkw-geolocation": "~7.6.10", // >=7.6.10 <7.6.99
+    },
+    "autoload": {
+        "psr-4": {
+            "RKW\\RkwConsultant\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "rkw_consultant"
+        }
+    }
+}

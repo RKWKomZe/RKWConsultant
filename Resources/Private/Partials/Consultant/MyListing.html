@@ -1,0 +1,18 @@
+{namespace vh=RKW\RkwConsultant\ViewHelpers}
+
+<f:if condition="{consultants}">
+	<table class="tx_rkwconsultant" >
+		<f:for each="{consultants}" as="consultant">
+			<tr>
+				<td>
+					<strong>{consultant.company}</strong>
+					<br>
+					{consultant.address},
+					{consultant.zip} {consultant.city}
+					<br>
+					<f:render partial="Consultant/Options" arguments="{_all}" />
+				</td>
+			</tr>
+		</f:for>
+	</table>
+</f:if>

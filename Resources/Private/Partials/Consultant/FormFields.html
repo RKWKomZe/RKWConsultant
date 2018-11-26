@@ -1,0 +1,418 @@
+{namespace vh=RKW\RkwConsultant\ViewHelpers}
+{namespace rkwRegistration=RKW\RkwRegistration\ViewHelpers}
+<!-- to use form.validationResults is a workaround for setting value (if condition with {firstName} e.g. doesn't work -->
+<!-- Means: first use properties of frontendUser - else the form was validated and comes back, then set object values -->
+<f:form.validationResults>
+
+	<!-- 1/2 left side -->
+
+	<div class="v320-1-of-2">
+
+		<!--
+		<div class="v320-1">
+			<label class="form-label" for="salutation">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.salutation" />
+				<vh:isMandatoryField fieldName='salutation' mandatoryFields="{settings.mandatoryFields.consultant}" />
+			</label>
+			<f:form.select prependOptionLabel="<f:translate key='tx_rkwconsultant_fluid.please_select' />" prependOptionValue="0" property="salutation" options="{1: 'Frau', 99: 'Herr'}" optionValueField="salutation" optionLabelField="name" name="salutation" />
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="title">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.title" />
+				<vh:isMandatoryField fieldName='title' mandatoryFields="{settings.mandatoryFields.consultant}" />
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.select prependOptionLabel="<f:translate key='tx_rkwconsultant_fluid.please_select' />" prependOptionValue="0" property="title"  name="title" options="<vh:explode string='{settings.consultant.title}' />" optionValueField="title" optionLabelField="name" />
+				</f:then>
+				<f:else>
+					<f:form.select prependOptionLabel="<f:translate key='tx_rkwconsultant_fluid.please_select' />" prependOptionValue="0" value="{frontendUser.title}" property="title" name="title" options="<vh:explode string='{settings.consultant.title}' />" />
+				</f:else>
+			</f:if>
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="firstName">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.first_name" />
+				<vh:isMandatoryField fieldName='firstName' mandatoryFields="{settings.mandatoryFields.consultant}" />
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield property="firstName" name="firstName" value="{firstName}" additionalAttributes="{autocomplete:'fname'}" />
+				</f:then>
+				<f:else>
+					<f:form.textfield property="firstName" name="firstName" value="{frontendUser.firstName}" additionalAttributes="{autocomplete:'fname'}" />
+				</f:else>
+			</f:if>
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="lastName">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.last_name" />
+				<vh:isMandatoryField fieldName='lastName' mandatoryFields="{settings.mandatoryFields.consultant}" />
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield property="lastName" name="lastName" value="{lastName}" additionalAttributes="{autocomplete:'lname'}" />
+				</f:then>
+				<f:else>
+					<f:form.textfield property="lastName" name="lastName" value="{frontendUser.lastName}" additionalAttributes="{autocomplete:'lname'}" />
+				</f:else>
+			</f:if>
+		</div>
+		-->
+
+		<div class="v320-1">
+			<label class="form-label" for="company">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.company" />
+				<f:if condition="<vh:isMandatoryField fieldName='company' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield id="company" property="company" name="company" value="{company}" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.company\" />" />
+				</f:then>
+				<f:else>
+					<f:form.textfield id="company" property="company" name="company" value="{frontendUser.company}" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.company\" />" />
+				</f:else>
+			</f:if>
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="address">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.address" />
+				<f:if condition="<vh:isMandatoryField fieldName='address' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield id="address" property="address" name="address" value="{address}" additionalAttributes="{autocomplete:'address'}" />
+				</f:then>
+				<f:else>
+					<f:form.textfield id="address" property="address" name="address" value="{frontendUser.address}" additionalAttributes="{autocomplete:'address'}" />
+				</f:else>
+			</f:if>
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="zip">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.zip" />
+				<f:if condition="<vh:isMandatoryField fieldName='zip' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield id="zip" property="zip" name="zip" value="{zip}" additionalAttributes="{autocomplete:'zip'}" />
+				</f:then>
+				<f:else>
+					<f:form.textfield id="zip" property="zip" name="zip" value="{frontendUser.zip}" additionalAttributes="{autocomplete:'zip'}" />
+				</f:else>
+			</f:if>
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="city">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.city" />
+				<f:if condition="<vh:isMandatoryField fieldName='city' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield id="city" property="city" name="city" value="{city}" additionalAttributes="{autocomplete:'city'}" />
+				</f:then>
+				<f:else>
+					<f:form.textfield id="city" property="city" name="city" value="{frontendUser.city}" additionalAttributes="{autocomplete:'city'}" />
+				</f:else>
+			</f:if>
+		</div>
+
+		<!--
+		<div class="v320-1">
+			<label class="form-label" for="state">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.state" />
+				<vh:isMandatoryField fieldName='state' mandatoryFields="{settings.mandatoryFields.consultant}" />
+			</label>
+			<f:form.select prependOptionLabel="<f:translate key='tx_rkwconsultant_fluid.please_select' />" prependOptionValue="0" property="state" name="state" options="<vh:explode string='{settings.consultant.states}' />" sortByOptionLabel="TRUE" optionValueField="state" optionLabelField="name" />
+		</div>
+		-->
+
+		<div class="v320-1">
+			<label class="form-label" for="telephone">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.telephone" />
+				<f:if condition="<vh:isMandatoryField fieldName='telephone' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield id="telephone" property="telephone" name="telephone" value="{telephone}" additionalAttributes="{autocomplete:'tel'}" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.phone\" />" />
+				</f:then>
+				<f:else>
+					<f:form.textfield id="telephone" property="telephone" name="telephone" value="{frontendUser.telephone}" additionalAttributes="{autocomplete:'tel'}" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.phone\" />" />
+				</f:else>
+			</f:if>
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="fax">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.fax" />
+				<f:if condition="<vh:isMandatoryField fieldName='fax' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield id="fax" property="fax" name="fax" value="{fax}" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.phone\" />" />
+				</f:then>
+				<f:else>
+					<f:form.textfield id="fax" property="fax" name="fax" value="{frontendUser.fax}" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.phone\" />" />
+				</f:else>
+			</f:if>
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="email">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.email" />
+				<f:if condition="<vh:isMandatoryField fieldName='email' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield id="email" property="email" name="email" value="{email}" additionalAttributes="{autocomplete:'email'}" />
+				</f:then>
+				<f:else>
+					<f:form.textfield id="email" property="email" name="email" value="{frontendUser.email}" additionalAttributes="{autocomplete:'email'}" />
+				</f:else>
+			</f:if>
+		</div>
+
+
+
+		<!--
+		<div class="v320-1">
+			<label class="form-label" for="rkwNetwork">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.rkw_network" />
+			</label>
+			<f:form.checkbox property="rkwNetwork" name="rkwNetwork" value="1" />
+		</div>
+		-->
+
+		<div class="v320-1">
+			<label class="form-label" for="shortDescription">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.short_description" />
+				<f:if condition="<vh:isMandatoryField fieldName='shortDescription' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:form.textarea id="shortDescription" class="scrollable feedback-field" rows="10" property="shortDescription" name="shortDescription" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.shortDescription\" />" />
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="reference">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.reference" />
+				<f:if condition="<vh:isMandatoryField fieldName='reference' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:form.textarea id="reference" class="scrollable feedback-field" rows="10"  property="reference" name="reference" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.reference\" />" />
+		</div>
+
+		<span class="checkbox">
+            <label>
+                <f:form.checkbox id="privacy" name="privacy" property="privacy" value="1" />
+                <rkwRegistration:privacyText />
+            </label>
+        </span>
+
+	</div>
+
+
+	<!-- 2/2 right side -->
+	<!-- on create the right side isn't very big - but on edit with given images the right side grows a lot! -->
+	<div class="v320-2-of-2">
+
+		<div class="v320-1">
+			<label class="form-label" for="www">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.www" />
+				<f:if condition="<vh:isMandatoryField fieldName='www' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:then>
+					<f:form.textfield id="www" property="www" name="www" value="{www}" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.website\" />" />
+				</f:then>
+				<f:else>
+					<f:form.textfield id="www" property="www" name="www" value="{frontendUser.www}" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.website\" />" />
+				</f:else>
+			</f:if>
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="facebook">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.facebook" />
+				<f:if condition="<vh:isMandatoryField fieldName='facebook' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:form.textfield id="facebook" property="facebook" name="facebook" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.facebook\" />" />
+		</div>
+
+		<div class="v320-1">
+			<label class="form-label" for="twitter">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.twitter" />
+				<f:if condition="<vh:isMandatoryField fieldName='twitter' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:form.textfield id="twitter" property="twitter" name="twitter" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.twitter\" />" />
+		</div>
+
+
+		<div class="v320-1">
+			<label class="form-label" for="googlePlus">
+				<f:translate key="tx_rkwconsultant_domain_model_consultant.google_plus" />
+				<f:if condition="<vh:isMandatoryField fieldName='googlePlus' mandatoryFields='{settings.mandatoryFields.consultant}' />">
+					<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+				</f:if>
+			</label>
+			<f:form.textfield id="googlePlus" property="googlePlus" name="googlePlus" placeholder="<f:translate key=\"partials_consultant_formFields.placeholder.googleplus\" />" />
+		</div>
+
+
+		<!-- images -->
+		<div class="v320-1">
+			<h3><f:translate key="partials_consultant_formFields.images" /></h3>
+			<p class="text-smaller"><f:translate key="partials_consultant_formFields.infoImages" /></p>
+
+			<f:for each="{consultant.image}" as="image" iteration="imageNumber">
+				<f:if condition="{settings.mandatoryFields.upload.images.numberOfMandatoryImages} <= {imageNumber.cycle}">
+					<f:if condition="{image.uid} == 0">
+						<label class="form-label" for="fileUpload">
+							<span class="optional"><f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+						</label>
+					</f:if>
+				</f:if>
+
+				<p>
+					<f:image class="image{imageNumber.cycle}"  width="100" src="{image.uid}" alt="{image.originalResource.name}" treatIdAsReference="1" />
+				</p>
+				<a class="removeImage{imageNumber.cycle} button secondary rkwconsultant-delete" href="<f:uri.action action='prepareDelete' controller='Consultant' extensionName='rkwConsultant' pluginName='Rkwconsultantmyconsultant' absolute='TRUE' pageUid='{settings.pageUid}' additionalParams='{type: settings.ajaxTypeNum, tx_rkwconsultant_rkwconsultantmyconsultant: {consultantimage: consultant.uid, fileuid: image.uid, imagenumber: imageNumber.cycle}}' section='rkw-consultant' />" data-featherlight>
+					<span>
+						<f:translate key="partials_consultant_formFields.delete" />
+					</span>
+				</a>
+				<f:form.upload class="rkwconsultant-hidden imageUpload{imageNumber.cycle}" property="imageUpload.{imageNumber.cycle}" name="imageUpload"/>
+			</f:for>
+
+			<f:if condition="<f:count>{consultant.image}</f:count> < 5">
+				<f:for each="{0:1, 1:2, 2:3, 3:4, 4:5}" as="image" iteration="imageIteration">
+					<f:if condition="{imageIteration.cycle} > <f:count>{consultant.image}</f:count>">
+						<f:if condition="{settings.mandatoryFields.upload.images.numberOfMandatoryImages} <= {imageIteration.cycle}">
+							<label class="form-label" for="imageUpload">
+								<span class="optional"><f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+							</label>
+						</f:if>
+						<f:form.upload property="imageUpload.{imageIteration.cycle}" name="imageUpload"/>
+					</f:if>
+				</f:for>
+			</f:if>
+		</div>
+
+
+		<!-- files
+		<div class="v320-1">
+			<h3><f:translate key="partials_consultant_formFields.files" /></h3>
+			<p class="text-smaller"><f:translate key="partials_consultant_formFields.infoFiles" /></p>
+
+			<f:for each="{consultant.file}" as="file" iteration="fileNumber">
+				<f:if condition="{settings.mandatoryFields.upload.files.numberOfMandatoryFiles} <= {fileNumber.cycle}">
+					<f:if condition="{file.originalResource.uid} == 0">
+						<label class="form-label" for="fileUpload">
+							<span class="optional"><f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+						</label>
+					</f:if>
+				</f:if>
+
+
+				<p>
+					<a class="removeFile{fileNumber.cycle}" href="{file.originalResource.publicUrl}">{file.originalResource.publicUrl}</a>
+				</p>
+				<a class="removeFile{fileNumber.cycle} button secondary rkwconsultant-delete" href="<f:uri.action action='prepareDelete' controller='Consultant' extensionName='rkwConsultant' pluginName='Rkwconsultantmyconsultant' absolute='TRUE' pageUid='{settings.pageUid}' additionalParams='{type: settings.ajaxTypeNum, tx_rkwconsultant_rkwconsultantmyconsultant: {consultantfile: consultant.uid, fileuid: file.uid, filenumber: fileNumber.cycle}}' section='rkw-consultant' />" data-featherlight>
+					<span>
+						<f:translate key="partials_consultant_formFields.delete" />
+					</span>
+				</a>
+				<f:form.upload class="rkwconsultant-hidden fileUpload{fileNumber.cycle}" property="fileUpload.{fileNumber.cycle}" name="fileUpload"/>
+			</f:for>
+
+			<f:if condition="<f:count>{consultant.file}</f:count> < 5">
+				<f:for each="{0:1, 1:2, 2:3, 3:4, 4:5}" as="file" iteration="fileIteration">
+					<f:if condition="{fileIteration.cycle} > <f:count>{consultant.file}</f:count>">
+						<f:if condition="{settings.mandatoryFields.upload.files.numberOfMandatoryFiles} <= {fileIteration.cycle}">
+							<label class="form-label" for="fileUpload">
+								<span class="optional"><f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+							</label>
+						</f:if>
+						<f:form.upload property="fileUpload.{fileIteration.cycle}" name="fileUpload"/>
+					</f:if>
+				</f:for>
+			</f:if>
+		</div>
+		-->
+
+
+		<!-- only for edit if data already persistent -->
+		<f:if condition="{consultant.uid}">
+
+			<!-- consultant services -->
+			<div class="v320-1">
+				<h3><f:translate key="partials_consultant_formFields.services" /></h3>
+				<f:if condition="<f:count>{consultant.consultantService}</f:count> > 0">
+					<f:then>
+						<table class="tx_rkwconsultant" >
+							<f:for each="{consultant.consultantService}" as="consultantService">
+								<tr>
+									<th>{consultantService.basicService.title}</th>
+									<td>
+										<f:link.action controller="ConsultantService" class="button secondary" action="edit" arguments="{consultantService : consultantService}">
+											<span>
+												<f:translate key="partials_consultant_formFields.edit" />
+											</span>
+										</f:link.action>
+										<br/>
+										<a class="button secondary rkwconsultant-delete" href="<f:uri.action action='prepareDelete' controller='Consultant' extensionName='rkwConsultant' pluginName='Rkwconsultantmyconsultant' absolute='TRUE' pageUid='{settings.pageUid}' additionalParams='{type: settings.ajaxTypeNum, tx_rkwconsultant_rkwconsultantmyconsultant: {consultantservice: consultantService.uid}}' section='rkw-consultant' />" class="rkwconsultant-delete" data-featherlight>
+											<span>
+												<f:translate key="partials_consultant_formFields.delete" />
+											</span>
+										</a>
+									</td>
+								</tr>
+							</f:for>
+						</table>
+					</f:then>
+					<f:else>
+						<p><em><f:translate key="partials_consultant_formFields.noServices" /></em></p>
+					</f:else>
+				</f:if>
+			</div>
+
+			<f:link.action class="button" controller="ConsultantService" action="choose" arguments="{consultant:consultant}">
+				<span>
+					<f:translate key="partials_consultant_formFields.newService" />
+				</span>
+
+			</f:link.action>
+		</f:if>
+	</div>
+
+</f:form.validationResults>
+
+
+

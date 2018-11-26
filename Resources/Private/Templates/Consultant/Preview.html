@@ -1,0 +1,26 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+    <div class="typo3-messages" role="alert">
+        <div class="message-error typo3-message">
+            <f:translate key="templates_consultant_preview.message" />
+        </div>
+    </div>
+
+    <f:flashMessages renderMode="div" />
+    <f:render partial="Consultant/Properties" arguments="{_all}" />
+
+</f:section>

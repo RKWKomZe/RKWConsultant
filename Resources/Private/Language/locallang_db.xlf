@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-09-21T15:09:54Z" product-name="rkw_consultant">
+		<header/>
+		<body>
+
+			<!-- tx_rkwconsultant_domain_model_consultant -->
+
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.general_choice">
+				<source>Choose an option</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant">
+				<source>RKW Consultants: Consultant</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation.I.female">
+				<source>Miss</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation.I.male">
+				<source>Mister</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.zip">
+				<source>Zip</source>
+			</trans-unit>
+            <trans-unit id="tx_rkwconsultant_domain_model_consultant.distance">
+                <source>Distance</source>
+            </trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state">
+				<source>State</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state_choice">
+				<source>Choose an option</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state1">
+				<source>Baden-Württemberg</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state2">
+				<source>Bavaria</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state3">
+				<source>Berlin</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state4">
+				<source>Brandenburg</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state5">
+				<source>Bremen</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state6">
+				<source>Hamburg</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state7">
+				<source>Hesse</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state8">
+				<source>Mecklenburg Western Pomerania</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state9">
+				<source>Lower Saxony</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state10">
+				<source>Northrhine-Westphalia</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state11">
+				<source>Rhineland Palatinate</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state12">
+				<source>Saarland</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state13">
+				<source>Saxony</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state14">
+				<source>Saxony-Anhalt</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state15">
+				<source>Schleswig Holstein</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state16">
+				<source>Thuringia</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.www">
+				<source>Www</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.facebook">
+				<source>Facebook</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.twitter">
+				<source>Twitter</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.google_plus">
+				<source>Google Plus</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.rkw_network">
+				<source>RKW Network</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.rkw_network.I.enable">
+				<source>Belongs to RKW Network</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.reference">
+				<source>Reference</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.file">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.image">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.services">
+				<source>Services</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.admin">
+				<source>FE-Admin</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.subeditor">
+				<source>FE-Co-Editor</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.sha1">
+				<source>Sha1</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.sha1_valid_until">
+				<source>Sha1 valid until</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.disabled">
+				<source>Disabled</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.disabled.I.disable">
+				<source>Disable Profile</source>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_consultantservice -->
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice">
+				<source>RKW Consultants: Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.further_informations">
+				<source>Further Informations</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.basic_service">
+				<source>Basic Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.qualification">
+				<source>Qualification</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.sub_service">
+				<source>Sub Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.contact_person">
+				<source>Contact Person</source>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_basicservice -->
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice">
+				<source>RKW Consultants: Basic Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.qualification">
+				<source>Qualification</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.sub_service">
+				<source>Sub Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.usergroup">
+				<source>Usergroup</source>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_qualification -->
+			<trans-unit id="tx_rkwconsultant_domain_model_qualification">
+				<source>RKW Consultants: Qualification</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_qualification.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_qualification.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_subservice">
+				<source>Sub Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_subservice.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_subservice.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_contactperson -->
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson">
+				<source>RKW Consultants: Contact Person</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.salutation">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.salutation.I.female">
+				<source>Miss</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.salutation.I.male">
+				<source>Mister</source>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_frontenduser.role -->
+			<trans-unit id="tx_rkwconsultant_domain_model_frontenduser.role">
+				<source>Consultant role</source>
+			</trans-unit>
+
+
+
+			<!-- ext_tables -->
+			<trans-unit id="tx_rkwconsultant_exttables.tab">
+				<source>Consultant</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_exttables.admin">
+				<source>Admin of</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_exttables.subeditor">
+				<source>Subeditor of</source>
+			</trans-unit>
+
+
+
+			<!-- Flexform -->
+            <trans-unit id="flexform.consultant.sheetTitle">
+                <source>Behavior</source>
+            </trans-unit>
+            <trans-unit id="flexform.consultant.action">
+                <source>Plugin Standard Action</source>
+            </trans-unit>
+            <trans-unit id="flexform.consultant.action.I.list">
+                <source>List / Detail</source>
+            </trans-unit>
+            <trans-unit id="flexform.consultant.networkOnly">
+                <source>Show Network only</source>
+            </trans-unit>
+
+
+			<trans-unit id="flexform.myConsultant.sheetTitle">
+				<source>Behavior</source>
+			</trans-unit>
+			<trans-unit id="flexform.myConsultant.action">
+				<source>Plugin Standard Action</source>
+			</trans-unit>
+			<trans-unit id="flexform.myConsultant.action.I.list">
+				<source>List / Detail</source>
+			</trans-unit>
+			<trans-unit id="flexform.myConsultant.action.I.new">
+				<source>Create new</source>
+			</trans-unit>
+			<trans-unit id="flexform.myConsultant.action.I.edit">
+				<source>Edit</source>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

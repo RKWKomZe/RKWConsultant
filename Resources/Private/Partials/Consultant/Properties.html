@@ -1,0 +1,35 @@
+{namespace vh=RKW\RkwConsultant\ViewHelpers}
+
+<f:if condition="{hideDetails} == 0">
+	<div class="detail-page">
+
+        <!-- Short description -->
+        <f:if condition="{consultant.shortDescription}">
+            <h2><f:translate key="partials_consultant_properties.description" /></h2>
+            <p><f:format.nl2br><vh:HtmlLink>{consultant.shortDescription}</vh:HtmlLink></f:format.nl2br></p>
+        </f:if>
+
+		<!-- consultantService -->
+		<f:if condition="{consultant.consultantService}">
+            <f:if condition="{consultant.rkwNetwork}">
+                <f:then>
+                    <h2><f:translate key="partials_consultant_properties.specialOffer" /></h2>
+                </f:then>
+                <f:else>
+                    <h2><f:translate key="partials_consultant_properties.whatWeOffer" /></h2>
+                </f:else>
+            </f:if>
+
+            <f:for each="{consultant.consultantService}" as="consultantService" iteration="iter" >
+				<f:render partial="ConsultantService/Properties" arguments="{consultantService:consultantService}" />
+			</f:for>
+		</f:if>
+
+		<!-- References -->
+		<f:if condition="{consultant.reference}">
+			<h2><f:translate key="partials_consultant_properties.references" /></h2>
+			<p><f:format.nl2br><vh:HtmlLink>{consultant.reference}</vh:HtmlLink></f:format.nl2br></p>
+		</f:if>
+
+	</div>
+</f:if>

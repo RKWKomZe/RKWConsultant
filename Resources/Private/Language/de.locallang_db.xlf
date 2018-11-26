@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-11-07T15:00:08Z" product-name="rkw_mailer">
+		<header/>
+		<body>
+
+			<!-- tx_rkwconsultant_domain_model_consultant -->
+
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.general_choice">
+				<source>Choose an option</source>
+				<target>Bitte wählen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant">
+				<source>RKW Consultants: Consultant</source>
+				<target>RKW Consultants: Berater</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation">
+				<source>Salutation</source>
+				<target>Anrede</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation.I.female">
+				<source>Miss</source>
+				<target>Frau</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation.I.male">
+				<source>Mister</source>
+				<target>Herr</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.first_name">
+				<source>First Name</source>
+				<target>Vorname</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.last_name">
+				<source>Last Name</source>
+				<target>Nachname</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.company">
+				<source>Company</source>
+				<target>Firma</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.address">
+				<source>Address</source>
+				<target>Adresse</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.zip">
+				<source>Zip</source>
+				<target>PLZ</target>
+			</trans-unit>
+            <trans-unit id="tx_rkwconsultant_domain_model_consultant.distance">
+                <source>Distance</source>
+                <target>Distanz</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwconsultant_domain_model_consultant.city">
+				<source>City</source>
+				<target>Stadt</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state">
+				<source>State</source>
+				<target>Bundesland</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state1">
+				<source>Baden-Württemberg</source>
+				<target>Baden-Württemberg</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state2">
+				<source>Bavaria</source>
+				<target>Bayern</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state3">
+				<source>Berlin</source>
+				<target>Berlin</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state4">
+				<source>Brandenburg</source>
+				<target>Brandenburg</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state5">
+				<source>Bremen</source>
+				<target>Bremen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state6">
+				<source>Hamburg</source>
+				<target>Hamburg</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state7">
+				<source>Hesse</source>
+				<target>Hessen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state8">
+				<source>Mecklenburg Western Pomerania</source>
+				<target>Mecklenburg Vorpommern</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state9">
+				<source>Lower Saxony</source>
+				<target>Niedersachsen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state10">
+				<source>Northrhine-Westphalia</source>
+				<target>Nordreihn-Westfalen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state11">
+				<source>Rhineland Palatinate</source>
+				<target>Rheinland Pfalz</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state12">
+				<source>Saarland</source>
+				<target>Saarland</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state13">
+				<source>Saxony</source>
+				<target>Sachsen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state14">
+				<source>Saxony-Anhalt</source>
+				<target>Sachsen Anhalt</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state15">
+				<source>Schleswig Holstein</source>
+				<target>Schleswig Holstein</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state.I.state16">
+				<source>Thuringia</source>
+				<target>Thüringen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.telephone">
+				<source>Telephone</source>
+				<target>Telefon</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.fax">
+				<source>Fax</source>
+				<target>Fax</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.email">
+				<source>Email</source>
+				<target>E-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.www">
+				<source>Www</source>
+				<target>Webseite</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.facebook">
+				<source>Facebook</source>
+				<target>Facebook</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.twitter">
+				<source>Twitter</source>
+				<target>Twitter</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.google_plus">
+				<source>Google Plus</source>
+				<target>Google+</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.rkw_network">
+				<source>Rkw Network</source>
+				<target>RKW Netzwerk</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.rkw_network.I.enable">
+				<source>Belongs to RKW Network</source>
+				<target>Gehört zum RKW Netzwerk</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.longitude">
+				<source>Longitude</source>
+				<target>Longitude</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.latitude">
+				<source>Latitude</source>
+				<target>Latitude</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.short_description">
+				<source>Short Description</source>
+				<target>Kurzbeschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.reference">
+				<source>Reference</source>
+				<target>Referenzen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.file">
+				<source>Files</source>
+				<target>Dateien</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.image">
+				<source>Imaged</source>
+				<target>Bilder</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.consultant_service">
+				<source>Service</source>
+				<target>Dienstleistung</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.admin">
+				<source>FE-Admin</source>
+				<target>Frontend-Admin des Profils</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.subeditor">
+				<source>FE-Co-Editor</source>
+				<target>Frontend-Co-Redakteure des Profils</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.sha1">
+				<source>Sha1</source>
+				<target>Sha1</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.sha1_valid_until">
+				<source>Sha1 valid until</source>
+				<target>Sha1 gültig bis</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.disabled">
+				<source>Disabled</source>
+				<target>Deaktiviert wegen Freigabeprozess</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.disabled.I.disable">
+				<source>Disable Profile</source>
+				<target>Profil deaktivieren</target>
+			</trans-unit>
+
+
+			<!--tx_rkwconsultant_domain_model_consultantservice  -->
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice">
+				<source>RKW Consultants: Service</source>
+				<target>RKW Consultants: Dienstleistung</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.further_informations">
+				<source>Further Informations</source>
+				<target>Weitere Informationen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.basic_service">
+				<source>Consulting Service</source>
+				<target>Beratungsleistung</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.qualification">
+				<source>Qualification</source>
+				<target>Qualifikation</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.sub_service">
+				<source>Sub Service</source>
+				<target>Spezielle Dienstleistungen</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.contact_person">
+				<source>Contact Person</source>
+				<target>Kontaktpersonen</target>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_basicservice  -->
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice">
+				<source>RKW Consultants: Basic Service</source>
+				<target>RKW Consultants: Allgemeine Beratungsleistung</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.short_description">
+				<source>Short Description</source>
+				<target>Kurzbeschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.qualification">
+				<source>Qualification</source>
+				<target>Qualifikation</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.sub_service">
+				<source>Sub Service</source>
+				<target>Spezielle Dienstleistung</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.usergroup">
+				<source>Usergroup</source>
+				<target>Nutzergruppe</target>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_qualification -->
+			<trans-unit id="tx_rkwconsultant_domain_model_qualification">
+				<source>RKW Consultants: Qualification</source>
+				<target>RKW Consultants: Qualifikation</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_qualification.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_qualification.short_description">
+				<source>Short Description</source>
+				<target>Kurzbeschreibung</target>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_subservice -->
+			<trans-unit id="tx_rkwconsultant_domain_model_subservice">
+				<source>RKW Consultants: Sub Service</source>
+				<target>RKW Consultants: Konkrete Beratungsleistung</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_subservice.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_subservice.short_description">
+				<source>Short Description</source>
+				<target>Kurzbeschreibung</target>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_contactperson -->
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson">
+				<source>RKW Consultants: Contact Person</source>
+				<target>RKW Consultants: Kontaktperson</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.salutation">
+				<source>Salutation</source>
+				<target>Anrede</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.first_name">
+				<source>First Name</source>
+				<target>Vorname</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.last_name">
+				<source>Last Name</source>
+				<target>Nachname</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.telephone">
+				<source>Telephone</source>
+				<target>Telefon</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.email">
+				<source>Email</source>
+				<target>E-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.image">
+				<source>Image</source>
+				<target>Bild</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.salutation.I.female">
+				<source>Miss</source>
+				<target>Frau</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.salutation.I.male">
+				<source>Mister</source>
+				<target>Herr</target>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_frontenduser -->
+			<trans-unit id="tx_rkwconsultant_domain_model_frontenduser.role">
+				<source>Consultant role</source>
+				<target>Berater Rolle</target>
+			</trans-unit>
+
+
+			<!-- ext_tables -->
+			<trans-unit id="tx_rkwconsultant_exttables.tab">
+				<source>Consultant</source>
+				<target>Berater</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_exttables.admin">
+				<source>Admin of</source>
+				<target>Admin von</target>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_exttables.subeditor">
+				<source>Subeditor of</source>
+				<target>Redakteur von</target>
+			</trans-unit>
+
+
+			<!-- Flexform -->
+            <trans-unit id="flexform.consultant.sheetTitle">
+                <source>Behavior</source>
+                <target>Verhalten</target>
+            </trans-unit>
+            <trans-unit id="flexform.consultant.action">
+                <source>Plugin Standard Action</source>
+                <target>Plugin Standard Action</target>
+            </trans-unit>
+            <trans-unit id="flexform.consultant.action.I.list">
+                <source>List / Detail</source>
+                <target>Listenansicht / Detailansicht</target>
+            </trans-unit>
+            <trans-unit id="flexform.consultant.networkOnly">
+                <source>Network only</source>
+                <target>Nur RKW Netzwerk anzeigen</target>
+            </trans-unit>
+
+
+			<trans-unit id="flexform.myConsultant.sheetTitle">
+				<source>Behavior</source>
+				<target>Verhalten</target>
+			</trans-unit>
+			<trans-unit id="flexform.myConsultant.action">
+				<source>Plugin Standard Action</source>
+				<target>Plugin Standard Action</target>
+			</trans-unit>
+			<trans-unit id="flexform.myConsultant.action.I.list">
+				<source>List / Detail</source>
+				<target>Listenansicht / Detailansicht</target>
+			</trans-unit>
+			<trans-unit id="flexform.myConsultant.action.I.new">
+				<source>Create new</source>
+				<target>Neu erstellen</target>
+			</trans-unit>
+			<trans-unit id="flexform.myConsultant.action.I.edit">
+				<source>Edit</source>
+				<target>Editieren</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

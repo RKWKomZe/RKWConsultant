@@ -1,0 +1,37 @@
+<f:link.action pageUid="{settings.pageUid}" target="_blank" class="button secondary" controller="Consultant" action="preview" arguments="{consultant:consultant}">
+	<span>
+		<f:translate key="partials_consultant_options.show" />
+	</span>
+</f:link.action>
+
+<f:link.action class="button secondary" pageUid="{editPageUid}" action="edit" arguments="{consultant : consultant}">
+	<span>
+		<f:translate key="partials_consultant_options.edit" />
+	</span>
+</f:link.action>
+
+<f:if condition="{consultant.disabled}">
+	<f:then>
+		<f:if condition="{consultant.consultantService}">
+			<f:then>
+				<p class="text-info text-info--error"><f:translate key="partials_consultant_options.profileChecking" /></p>
+			</f:then>
+			<f:else>
+				<a class="button secondary rkwconsultant-delete" href="<f:uri.action action='prepareDelete' controller='Consultant' extensionName='rkwConsultant' pluginName='Rkwconsultantmyconsultant' absolute='TRUE' pageUid='{settings.pageUid}' additionalParams='{type: settings.ajaxTypeNum, tx_rkwconsultant_rkwconsultantmyconsultant: {consultant: consultant.uid}}' section='rkw-consultant' />" data-featherlight>
+					<span>
+						<f:translate key="partials_consultant_options.delete" />
+					</span>
+				</a>
+				<p class="text-info text-info--error"><f:translate key="partials_consultant_options.profileIncomplete" /></p>
+			</f:else>
+		</f:if>
+	</f:then>
+	<f:else>
+		<a class="button secondary rkwconsultant-delete" href="<f:uri.action action='prepareDelete' controller='Consultant' extensionName='rkwConsultant' pluginName='Rkwconsultantmyconsultant' absolute='TRUE' pageUid='{settings.pageUid}' additionalParams='{type: settings.ajaxTypeNum, tx_rkwconsultant_rkwconsultantmyconsultant: {consultant: consultant.uid}}' section='rkw-consultant' />" data-featherlight>
+			<span>
+				<f:translate key="partials_consultant_options.delete" />
+			</span>
+		</a>
+        <p class="text-info text-info--ok"><f:translate key="partials_consultant_options.profileOnline" /></p>
+    </f:else>
+</f:if>

@@ -1,0 +1,21 @@
+
+<f:if condition="{hideDetails} == 0">
+	<f:if condition="<f:count>{consultant.image}</f:count> > 0">
+		<section aria-labelledby="headline-gallery" role="contentinfo">
+			<div class="section-header">
+				<h2 id="headline-gallery"><f:translate key="templates_consultant_gallery.headline" /></h2>
+			</div>
+			<div class="boxes-gallery">
+				<f:for each="{consultant.image}" as="image">
+					<div>
+						<div class="box gallery">
+							<figure>
+								<f:cObject typoscriptObjectPath="plugin.tx_rkwrelated.libs.responsiveImageThumbnail" data="{image.uid}"/>
+							</figure>
+						</div>
+					</div>
+				</f:for>
+			</div>
+		</section>
+	</f:if>
+</f:if>

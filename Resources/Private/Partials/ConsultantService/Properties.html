@@ -1,0 +1,85 @@
+{namespace vh=RKW\RkwConsultant\ViewHelpers}
+
+<f:if condition="{consultantService}">
+
+	<!-- Details for service --->
+	<h4>{consultantService.basicService.title}</h4>
+
+	<table class="responsive">
+
+		<!-- Sub-Service -->
+		<f:if condition="{consultantService.subService}">
+			<tr>
+				<th><f:translate key="partials_consultantService_properties.subServiceLabel" /></th>
+				<td>
+					<ul>
+						<f:for each="{consultantService.subService}" as="subService">
+							<li>{subService.title}</li>
+						</f:for>
+					</ul>
+				</td>
+			</tr>
+		</f:if>
+
+		<!-- Qualification -->
+		<f:if condition="{consultantService.qualification}">
+			<tr>
+				<th><f:translate key="partials_consultantService_properties.qualificationsLabel" /></th>
+				<td>
+					<ul>
+						<f:for each="{consultantService.qualification}" as="qualification">
+							<li>{qualification.title}</li>
+						</f:for>
+					</ul>
+				</td>
+			</tr>
+		</f:if>
+
+		<!-- Description -->
+		<f:if condition="{consultantService.furtherInformations}">
+			<tr>
+				<th><f:translate key="partials_consultantService_properties.descriptionLabel" /></th>
+				<td>
+					<f:format.nl2br><vh:HtmlLink>{consultantService.furtherInformations}</vh:HtmlLink></f:format.nl2br>
+				</td>
+			</tr>
+		</f:if>
+
+		<!-- Contact -->
+		<tr>
+			<th><f:translate key="partials_consultantService_properties.contactLabel" /></th>
+			<td>
+				<f:for each="{consultantService.contactPerson}" as="contactPerson">
+
+					<f:if condition="{contactPerson.email}">
+						<p>
+
+							<!--
+							<f:if condition="{contactPerson.image}" >
+								<f:for each="{contactPerson.image}" as="image">
+									<figure class="person-image">
+										<f:cObject typoscriptObjectPath="plugin.tx_rkwconsultant.libs.responsiveImageThumbnail" data="{image.uid}"/>
+									</figure>
+								</f:for>
+							</f:if> -->
+
+							<f:if condition="{contactPerson.firstName}">
+								{contactPerson.firstName}&nbsp;
+							</f:if>
+							<f:if condition="{contactPerson.lastName}">
+								{contactPerson.lastName}<br/>
+							</f:if>
+							<f:if condition="{contactPerson.telephone}">
+								<strong><f:translate key="tx_rkwconsultant_domain_model_consultant.telephone" />:</strong>&nbsp;{contactPerson.telephone}<br/>
+							</f:if>
+							<strong><f:translate key="tx_rkwconsultant_domain_model_consultant.email" />:</strong>&nbsp;<a href="mailto:{contactPerson.email}">{contactPerson.email}</a><br/>
+						</p>
+					</f:if>
+				</f:for>
+			</td>
+		</tr>
+
+	</table>
+</f:if>
+
+

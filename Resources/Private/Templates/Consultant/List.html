@@ -1,0 +1,47 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+    <f:flashMessages renderMode="div" />
+
+    <!--<header class="page-headings">
+        <h1>
+            <f:translate key="templates_consultant_list.headline" />
+        </h1>
+    </header> -->
+
+    <f:render partial="Consultant/SearchFilter" arguments="{_all}" />
+
+    <!-- listing -->
+    <div class="search-result-section" id="tx-rkwconsultant-search-result-section">
+        <f:if condition="{consultantList}">
+            <f:then>
+                    <div class="boxes-grid" id="tx-rkwconsultant-grid-section">
+                        <f:render partial="Consultant/Listing" arguments="{_all}" />
+                    </div>
+            </f:then>
+            <f:else>
+                <div class="no-search-results first-letter-normal content content-box">
+                    <div class="csc-default csc-element-n1">
+                        <h3><strong><f:translate key="templates_consultant_list.noResults" extensionName="RkwConsultant" /></strong></h3>
+                        <p><f:translate key="templates_consultant_list.noResultsDetails" extensionName="RkwConsultant" /></p>
+                    </div>
+                </div>
+            </f:else>
+        </f:if>
+    </div>
+
+
+</f:section>

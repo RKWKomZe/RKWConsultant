@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-05-09T11:53:22Z" product-name="rkw_consultants">
+		<header/>
+		<body>
+			<!-- tx_rkwconsultant_domain_model_consultant -->
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant">
+				<source>Consultant</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.state">
+				<source>State</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.www">
+				<source>Www</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.facebook">
+				<source>Facebook</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.twitter">
+				<source>Twitter</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.google_plus">
+				<source>Google Plus</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.rkw_network">
+				<source>Rkw Network</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.reference">
+				<source>References</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.file">
+				<source>File</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.files">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultant.consultant_service">
+				<source>Service</source>
+			</trans-unit>
+
+
+
+			<!-- tx_rkwconsultant_domain_model_consultantservice -->
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice">
+				<source>Consultant service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.further_informations">
+				<source>Further informations</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.basic_service">
+				<source>Basic Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.qualification">
+				<source>Qualification</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.sub_service">
+				<source>Sub Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_consultantservice.contact_person">
+				<source>Contact Person</source>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_basicservice -->
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice">
+				<source>Consulting Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.qualification">
+				<source>Qualification</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.sub_service">
+				<source>Sub Service</source>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_qualification -->
+			<trans-unit id="tx_rkwconsultant_domain_model_qualification">
+				<source>Qualification</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_qualification.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_qualification.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_subservice -->
+			<trans-unit id="tx_rkwconsultant_domain_model_subservice">
+				<source>Sub Service</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_subservice.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_subservice.short_description">
+				<source>Short Description</source>
+			</trans-unit>
+
+
+			<!-- tx_rkwconsultant_domain_model_contactperson -->
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson">
+				<source>Contact Person</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactpersons">
+				<source>Contact Persons</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.salutation">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_domain_model_contactperson.image_remove">
+				<source>Remove Image</source>
+			</trans-unit>
+
+
+
+			<!-- Templates/Consultant/New.html -->
+			<trans-unit id="templates_consultant_new.headline">
+				<source>New Consultant (Step 1 of 3)</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_new.steps">
+				<source><![CDATA[<ul class="steps"><li class="current">1. Create Profile</li><li>2. Add Services</li><li>3. Add further information</li></ul>]]></source>
+				<target><![CDATA[<ul class="steps"><li class="current">1. Berater-Profil anlegen</li><li>2. Beratungsleistung hinzufügen</li><li>3. Ansprechpartner &amp; Details ergänzen</li></ul>]]></target>
+			</trans-unit>
+			<trans-unit id="templates_consultant_new.introduction">
+				<source>Please enter the basic data of your consultant-profile here.</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_new.back">
+				<source>Back</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_new.step2">
+				<source>Step 2</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_new.no_more_profiles">
+				<source>No more profiles can be created.</source>
+			</trans-unit>
+
+
+
+			<!-- Templates/Consultant/Edit.html -->
+			<trans-unit id="templates_consultant_edit.headline">
+				<source>Edit Consultant-Profile</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_edit.description">
+				<source>Here you can edit your consultant-profile</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_edit.back">
+				<source>Back</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_edit.save">
+				<source>Save</source>
+			</trans-unit>
+
+
+
+			<!-- Templates/Consultant/Error.html -->
+			<trans-unit id="templates_consultant_error.headline">
+				<source>Error page</source>
+			</trans-unit>
+
+
+			<!-- Templates/Consultant/Gallery.html -->
+			<trans-unit id="templates_consultant_gallery.headline">
+				<source>Gallery</source>
+			</trans-unit>
+
+
+			<!-- Templates/Consultant/Info.html -->
+			<trans-unit id="templates_consultant_info.labelMore">
+				<source>More Information</source>
+			</trans-unit>
+
+
+			<!-- Templates/Consultant/Preview.html -->
+			<trans-unit id="templates_consultant_preview.message">
+				<source>Preview</source>
+			</trans-unit>
+
+
+			<!-- Templates/Consultant/MyList.html -->
+			<trans-unit id="templates_consultant_myList.headline">
+				<source>My Consultants</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_myList.newConsultant">
+				<source>New consultant</source>
+			</trans-unit>
+
+			<!-- Templates/Consultant/List.html -->
+            <trans-unit id="templates_consultant_list.headline">
+                <source>Find consultants in your area</source>
+            </trans-unit>
+			<trans-unit id="templates_consultant_list.noResults">
+				<source>Sorry, we couldn't find any match for your query.</source>
+			</trans-unit>
+            <trans-unit id="templates_consultant_list.noResultsDetails">
+                <source>Please try another combination of filters.</source>
+            </trans-unit>
+
+
+			<!-- Templates/Consultant/PrepareDelete.html -->
+			<trans-unit id="templates_consultant_prepareDelete.deleteConsultant.headline">
+				<source>Delete consultant</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteConsultant.description">
+				<source>Really delete?</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteConsultant.labelYes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteConsultant.labelNo">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteService.headline">
+				<source>Delete service</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteService.description">
+				<source>Really delete?</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteService.labelYes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteService.labelNo">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteImage.headline">
+				<source>Delete image</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteImage.description">
+				<source>Really delete?</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteImage.labelYes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteImage.labelNo">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteFile.headline">
+				<source>Delete file</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteFile.description">
+				<source>Really delete?</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteFile.labelYes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="templates_consultant_prepareDelete.deleteFile.labelNo">
+				<source>No</source>
+			</trans-unit>
+
+
+
+
+			<!-- Templates/ConsultantService/Choose.html -->
+			<trans-unit id="templates_consultantService_choose.headline">
+				<source>Select a service</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_choose.description">
+				<source>In a first step select one of your services. In the next step you can add a contact person and additional information. You can also add more services thereafter.</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_choose.steps">
+				<source><![CDATA[<ul class="steps"><li>1. Create Profile</li><li class="current">2. Add Services</li><li>3. Add further information</li></ul>]]></source>
+				<target><![CDATA[<ul class="steps"><li>1. Berater-Profil anlegen</li><li class="current">2. Beratungsleistung hinzufügen</li><li>3. Ansprechpartner &amp; Details ergänzen</li></ul>]]></target>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_choose.escape">
+				<source>Escape</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_choose.step3">
+				<source>Step 3</source>
+			</trans-unit>
+
+
+			<!-- Templates/ConsultantService/New.html -->
+			<trans-unit id="templates_consultantService_new.headline">
+				<source>Add further information (Step 3 of 3)</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_new.description">
+				<source>Here you can add the contact persons for your service and some further descriptions of the service you offer.</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_new.steps">
+				<source><![CDATA[<ul class="steps"><li>1. Create Profile</li><li>2. Add Services</li><li class="current">3. Add further information</li></ul>]]></source>
+				<target><![CDATA[<ul class="steps"><li>1. Berater-Profil anlegen</li><li>2. Beratungsleistung hinzufügen</li><li class="current">3. Ansprechpartner &amp; Details ergänzen</li></ul>]]></target>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_new.subheadline">
+				<source>Further information on service %s</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_new.escape">
+				<source>Escape</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_new.stepLast">
+				<source>Finish</source>
+			</trans-unit>
+
+
+
+			<!-- Templates/ConsultantService/Edit.html -->
+			<trans-unit id="templates_consultantService_edit.headline">
+				<source>Edit Service</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_edit.description">
+				<source>Here you can edit your service and edit your contact persons.</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_edit.subheadline">
+				<source>Further information on service %s</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_edit.back">
+				<source>Back</source>
+			</trans-unit>
+			<trans-unit id="templates_consultantService_edit.save">
+				<source>Save</source>
+			</trans-unit>
+
+
+			<!-- Partials/Consultant/Listing.html -->
+			<trans-unit id="partials_consultant_listing.energyconsultant">
+				<source>Energy advisor</source>
+			</trans-unit>
+            <trans-unit id="partials_consultant_listing.network">
+                <source>RKW Network</source>
+            </trans-unit>
+			<trans-unit id="partials_consultant_listing.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_listing.morebox1">
+				<source>Interesting?</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_listing.morebox2">
+				<source>Show more</source>
+			</trans-unit>
+
+
+			<!-- Partials/Consultant/Properties.html -->
+			<trans-unit id="partials_consultant_properties.whatWeOffer">
+				<source>What we offer...</source>
+			</trans-unit>
+            <trans-unit id="partials_consultant_properties.specialOffer">
+                <source>Special offers</source>
+            </trans-unit>
+			<trans-unit id="partials_consultant_properties.references">
+				<source>Reference</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_properties.description">
+				<source>Description</source>
+			</trans-unit>
+
+
+
+			<!-- Partials/Consultant/FormFields.html -->
+			<trans-unit id="partials_consultant_formFields.infoImages">
+				<source>Add your logo or an image of your company.</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.infoFiles">
+				<source>Add some files here.</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.placeholder.phone">
+				<source>e.g. 06196/495-0</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.placeholder.company">
+				<source>e.g. EnergySaver Inc.</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.placeholder.shortDescription">
+				<source>Here you can describe your company. Tell the people why your service is the best.</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.placeholder.reference">
+				<source>Here you can add some references.</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.placeholder.website">
+				<source>e.g. http://www.example.com</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.placeholder.facebook">
+				<source>e.g. https://www.facebook.com/mustermann-gmbh</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.placeholder.twitter">
+				<source>e.g. https://www.twitter.com/mustermann-gmbh</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.placeholder.googleplus">
+				<source>e.g. https://www.plus.google.com/mustermann-gmbh</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.edit">
+				<source>Edit</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.delete">
+				<source>Delete</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.noServices">
+				<source>No services available.</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.newService">
+				<source>Add Service</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.services">
+				<source>Services</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.files">
+				<source>Your Files</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_formFields.images">
+				<source>Your Images</source>
+			</trans-unit>
+
+
+
+			<!-- Partials/Consultant/Options.html -->
+			<trans-unit id="partials_consultant_options.show">
+				<source>Show</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_options.profileChecking">
+				<source>This profile is checked actually.</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_options.profileIncomplete">
+				<source>This profile is incomplete.</source>
+			</trans-unit>
+            <trans-unit id="partials_consultant_options.profileOnline">
+                <source>Your profile is online.</source>
+            </trans-unit>
+			<trans-unit id="partials_consultant_options.edit">
+				<source>Edit</source>
+			</trans-unit>
+			<trans-unit id="partials_consultant_options.delete">
+				<source>Delete</source>
+			</trans-unit>
+
+
+            <!-- Partials/Consultant/SearchFilter.html -->
+            <trans-unit id="partials_consultant_searchFilter.placeholder_address">
+                <source>Insert ZIP or address</source>
+            </trans-unit>
+            <trans-unit id="partials_consultant_searchFilter.search">
+                <source>Search</source>
+            </trans-unit>
+
+
+
+
+
+			<!-- fluid templates general -->
+			<trans-unit id="tx_rkwconsultant_fluid.please_select">
+				<source>Please select</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_fluid.label_optional">
+				<source>(optional)</source>
+			</trans-unit>
+
+
+
+			<!-- #################################### -->
+			<!-- rkw mail service -->
+			<!-- #################################### -->
+			<trans-unit id="rkwMailService.adminApproveMail.subject">
+				<source>A consultant profile has to be approved</source>
+			</trans-unit>
+			<trans-unit id="rkwMailService.userUnlockMail.unlock">
+				<source>Consultant profile has been unlocked</source>
+			</trans-unit>
+			<trans-unit id="rkwMailService.adminDeleteMail.deleted">
+				<source>Consultant profile has been deleted</source>
+			</trans-unit>
+			<trans-unit id="rkwMailService.userDeleteMail.deleted">
+				<source>Consultant profile has been deleted</source>
+			</trans-unit>
+
+
+			<!-- Templates/Email/AdminApproveMail.html-->
+			<trans-unit id="templates_email_adminApproveMail.headline">
+				<source>Hello %s,</source>
+			</trans-unit>
+			<trans-unit id="templates_email_adminApproveMail.text1">
+				<source>the user %s %s (ID: %s) as created a new consultant-profile or has edited an existing one. The profile has to be approved by you before it is public visible. In case of questions you can simply reply to this e-mail.</source>
+			</trans-unit>
+			<trans-unit id="templates_email_adminApproveMail.textPreview">
+				<source>View Preview of Profile</source>
+			</trans-unit>
+			<trans-unit id="templates_email_adminApproveMail.textEnable">
+				<source>Approve profile</source>
+			</trans-unit>
+
+
+			<!-- Templates/Email/UserUnlockMail.html-->
+			<trans-unit id="templates_email_userUnlockMail.headline">
+				<source>Hello %s %s,</source>
+			</trans-unit>
+			<trans-unit id="templates_email_userUnlockMail.text1">
+				<source>your consultant-profile has been approved by one of our admins. Your profile is now visible to all users and can be found in our search.</source>
+			</trans-unit>
+			<trans-unit id="templates_email_userUnlockMail.textShow">
+				<source>View  Profile</source>
+			</trans-unit>
+
+
+			<!-- Templates/Email/AdminDeleteMail.html-->
+			<trans-unit id="templates_email_adminDeleteMail.headline">
+				<source>Hello %s,</source>
+			</trans-unit>
+			<trans-unit id="templates_email_adminDeleteMail.text1">
+				<source>the user %s %s (ID: %s) has deleted one of his consultant-profiles. In case of questions you can simply reply to this e-mail.</source>
+			</trans-unit>
+
+
+			<!-- Templates/Email/UserDeleteMail.html-->
+			<trans-unit id="templates_email_userDeleteMail.headline">
+				<source>Hello %s %s,</source>
+			</trans-unit>
+			<trans-unit id="templates_email_userDeleteMail.text1">
+				<source>your consultant-profile has successfully been deleted. Please find the details of your consultant-profile below..</source>
+			</trans-unit>
+
+
+			<!-- Partials/Email/Details.html-->
+			<trans-unit id="partials_email_details.details">
+				<source>Details</source>
+			</trans-unit>
+
+			<!-- #################################### -->
+			<!-- Controller -->
+			<!-- #################################### -->
+
+			<!-- controller consultant -->
+			<trans-unit id="tx_rkwconsultant_controller_consultant.pleaselogin">
+				<source>Please login.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.rights_problem">
+				<source>You have not the rights for this action.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.rights_problem_admin">
+				<source>You must have the status of an admin for this action.</source>
+			</trans-unit>
+			<!--<trans-unit id="tx_rkwconsultant_controller_consultant.created">
+				<source>A new consultant was created. Please add some services now to complete the registration.</source>
+			</trans-unit>-->
+			<trans-unit id="tx_rkwconsultant_controller_consultant.disabled">
+				<source>The profile has to be checked. Until then the profile details are hidden for other users.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.directly_enabled">
+				<source>Thanks for registering. The consultant profile is online now.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.token_not_set">
+				<source>Necessary token not set.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.token_invalid">
+				<source>Token invalid.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.token_expired">
+				<source>Token expired.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.remote_addr_wrong">
+				<source>Remote address (your IP) is not valid.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.enabled">
+				<source>This profile is enabled now.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.already_unlocked">
+				<source>This profile is already unlocked.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.file_deleted">
+				<source>File deleted.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.image_deleted">
+				<source>Image deleted.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.updated">
+				<source>Profile updated.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultant.deleted">
+				<source>Consultant Profile deleted.</source>
+			</trans-unit>
+
+
+			<!-- controller consultantservice -->
+			<trans-unit id="tx_rkwconsultant_controller_consultantservice.created">
+				<source>A new service was created.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultantservice.updated">
+				<source>The service is updated.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultantservice.deleted">
+				<source>Service deleted.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultantservice.nothtingToChoose">
+				<source>No other services available at this time.</source>
+			</trans-unit>
+			<trans-unit id="tx_rkwconsultant_controller_consultantservice.disabled">
+				<source>The profile has to be checked. Until then the profile details are hidden for other users.</source>
+			</trans-unit>
+
+
+
+
+			<!-- #################################### -->
+			<!-- validator -->
+			<!-- #################################### -->
+			<trans-unit id="validator.not_filled">
+				<source>Please fill out the field '%s'.</source>
+			</trans-unit>
+			<trans-unit id="validator.no_choice">
+				<source>Please fill out the field '%s'.</source>
+			</trans-unit>
+			<trans-unit id="validator.size_exceed">
+				<source>File size exceed</source>
+			</trans-unit>
+			<trans-unit id="validator.wrong_type">
+				<source>Please use one of the following file types: %s</source>
+			</trans-unit>
+			<trans-unit id="validator.files_mandatory">
+				<source>The minimum of files is not reached: %s</source>
+			</trans-unit>
+			<trans-unit id="validator.images_mandatory">
+				<source>The minimum of images is not reached: %s</source>
+			</trans-unit>
+			<trans-unit id="validator.one_image_mandatory">
+				<source>One image is mandatory</source>
+			</trans-unit>
+			<trans-unit id="validator.contact_persons_mandatory">
+				<source>The minimum of contact persons is not reached: %</source>
+			</trans-unit>
+
+
+
+			<!-- #################################### -->
+			<!-- form errors -->
+			<!-- #################################### -->
+
+			<!-- consultant -->
+			<trans-unit id="form.error.consultant.salutation" xml:space="preserve">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.firstName" xml:space="preserve">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.lastName" xml:space="preserve">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.company" xml:space="preserve">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.address" xml:space="preserve">
+				<source>Address</source>
+			</trans-unit>
+            <trans-unit id="form.error.consultant.zip" xml:space="preserve">
+				<source>ZIP</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.city" xml:space="preserve">
+				<source>City</source>
+			</trans-unit>
+            <trans-unit id="form.error.consultant.state" xml:space="preserve">
+				<source>State</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.telephone" xml:space="preserve">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.fax" xml:space="preserve">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.www" xml:space="preserve">
+				<source>Webside</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.facebook" xml:space="preserve">
+				<source>Facebook</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.twitter" xml:space="preserve">
+				<source>Twitter</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.googlePlus" xml:space="preserve">
+				<source>Google+</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.shortDescription" xml:space="preserve">
+				<source>Short description</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.reference" xml:space="preserve">
+				<source>Reference</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.imageUpload.0" xml:space="preserve">
+				<source>Image upload 1</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.imageUpload.1" xml:space="preserve">
+				<source>Image upload 2</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultant.imageUpload.2" xml:space="preserve">
+				<source>Image upload 3</source>
+			</trans-unit>
+
+
+			<!-- consultantService -->
+			<trans-unit id="form.error.consultantService.furtherInformations" xml:space="preserve">
+				<source>Further informations</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.qualification" xml:space="preserve">
+				<source>Qualification</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.subService" xml:space="preserve">
+				<source>Sub service</source>
+			</trans-unit>
+
+			<!-- contactPerson 0 -->
+			<trans-unit id="form.error.consultantService.contactPerson.0.salutation" xml:space="preserve">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.0.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.0.firstName" xml:space="preserve">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.0.lastName" xml:space="preserve">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.0.company" xml:space="preserve">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.0.telephone" xml:space="preserve">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.0.email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+
+
+			<!-- contactPerson 1 -->
+			<trans-unit id="form.error.consultantService.contactPerson.1.salutation" xml:space="preserve">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.1.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.1.firstName" xml:space="preserve">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.1.lastName" xml:space="preserve">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.1.company" xml:space="preserve">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.1.telephone" xml:space="preserve">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.1.email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+
+
+			<!-- contactPerson 2 -->
+			<trans-unit id="form.error.consultantService.contactPerson.2.salutation" xml:space="preserve">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.2.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.2.firstName" xml:space="preserve">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.2.lastName" xml:space="preserve">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.2.company" xml:space="preserve">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.2.telephone" xml:space="preserve">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="form.error.consultantService.contactPerson.2.email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+
+
+
+
+		</body>
+	</file>
+</xliff>

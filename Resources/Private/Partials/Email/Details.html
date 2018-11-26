@@ -1,0 +1,26 @@
+{namespace vh=RKW\RkwMailer\ViewHelpers}
+
+
+<!-- PLAINTEXT -->
+<f:section name="Plaintext">
+=============================================================
+<vh:frontend.translate key="partials_email_details.details" languageKey="{language}" extensionName="rkwConsultant" />
+=============================================================
+<f:if condition="{account.company}">
+{account.company}
+</f:if>{account.firstName} {account.lastName}
+{account.address}
+{account.zip} {account.city}
+</f:section>
+
+
+<!-- HTML -->
+<f:section name="Html">
+	<h2><vh:frontend.translate key="partials_email_details.details" languageKey="{language}" extensionName="rkwConsultant" /></h2>
+	<p>
+		<f:if condition="{account.company}"><strong>{account.company}</strong><br/></f:if>
+		{account.firstName} {account.lastName}
+		{account.address}
+		{account.zip} {account.city}
+	</p>
+</f:section>

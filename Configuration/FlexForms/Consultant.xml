@@ -1,0 +1,39 @@
+
+<!-- Defines only several options for the standard Rkwconsultant-Plugin (not for MyList-Plugin, Maps, Gallery etc...) -->
+
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:flexform.consultant.sheetTitle</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:flexform.consultant.action</label>
+                            <config>
+                                <type>select</type>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:flexform.consultant.action.I.list</numIndex>
+                                        <numIndex index="1">Consultant->list;Consultant->show;Consultant->preview;Consultant->error;Consultant->disable;Consultant->enable</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>
+                    <settings.networkOnly>
+                        <TCEforms>
+                            <label>LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:flexform.consultant.networkOnly</label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.networkOnly>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

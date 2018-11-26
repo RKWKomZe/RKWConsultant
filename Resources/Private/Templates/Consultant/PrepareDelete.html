@@ -1,0 +1,88 @@
+
+<f:layout name="Default" />
+
+
+<f:section name="main">
+	<div class="featherlight-inner">
+
+		<!-- delete consultant -->
+		<f:if condition="{type} == 'consultant'">
+			<h2><f:translate key="templates_consultant_prepareDelete.deleteConsultant.headline" /></h2>
+			<p><f:translate key="templates_consultant_prepareDelete.deleteConsultant.description" /></p>
+
+			<f:link.action class="button secondary delete-consultant" action="delete" additionalParams="{type: settings.ajaxTypeNum}" arguments="{consultant : consultant}">
+				<span><f:translate key="templates_consultant_prepareDelete.deleteConsultant.labelYes" /></span>
+			</f:link.action>
+
+			<!-- Hint: featherlight-close does not work when span-tags in link - don't know why -->
+			<a class="button featherlight-close" href="#" >
+				<f:translate key="templates_consultant_prepareDelete.deleteConsultant.labelNo" />
+			</a>
+		</f:if>
+
+		<!-- delete consultantService -->
+		<f:if condition="{type} == 'service'">
+			<h2><f:translate key="templates_consultant_prepareDelete.deleteService.headline" /></h2>
+			<p><f:translate key="templates_consultant_prepareDelete.deleteService.description" /></p>
+
+			<f:link.action class="button secondary delete-service" controller="ConsultantService" action="delete" additionalParams="{type: settings.ajaxTypeNum, tx_rkwconsultant_rkwconsultantmyconsultant: {consultantService : consultantService}}" arguments="{consultantService : consultantService}">
+				<span><f:translate key="templates_consultant_prepareDelete.deleteService.labelYes" /></span>
+			</f:link.action>
+
+			<!-- Hint: featherlight-close does not work when span-tags in link - don't know why -->
+			<a class="button featherlight-close" href="#" >
+				<f:translate key="templates_consultant_prepareDelete.deleteService.labelNo" />
+			</a>
+		</f:if>
+
+		<!-- delete image of consultant -->
+		<f:if condition="{type} == 'image'">
+			<h2><f:translate key="templates_consultant_prepareDelete.deleteImage.headline" /></h2>
+			<p><f:translate key="templates_consultant_prepareDelete.deleteImage.description" /></p>
+
+			<button class="button secondary featherlight-close" onclick="removeFile({fileUid},{consultant.uid},{imageNumber},'image'); return false;">
+				<span>
+					<f:translate key="templates_consultant_prepareDelete.deleteImage.labelYes" />
+				</span>
+			</button>
+
+			<!-- Hint: featherlight-close does not work when span-tags in link - don't know why -->
+			<a class="button featherlight-close" href="#" >
+				<f:translate key="templates_consultant_prepareDelete.deleteImage.labelNo" />
+			</a>
+		</f:if>
+
+		<!-- delete file of consultant -->
+		<f:if condition="{type} == 'file'">
+			<h2><f:translate key="templates_consultant_prepareDelete.deleteFile.headline" /></h2>
+
+			<p><f:translate key="templates_consultant_prepareDelete.deleteFile.description" /></p>
+			<button class="button secondary featherlight-close" onclick="removeFile({fileUid},{consultant.uid},{fileNumber},'file'); return false;">
+				<span>
+					<f:translate key="templates_consultant_prepareDelete.deleteFile.labelYes" />
+				</span>
+			</button>
+
+			<a class="button featherlight-close" href="#" >
+				<f:translate key="templates_consultant_prepareDelete.deleteFile.labelNo" />
+			</a>
+		</f:if>
+
+		<!-- delete image of contactPerson -->
+		<f:if condition="{type} == 'contactperson'">
+			<h2><f:translate key="templates_consultant_prepareDelete.deleteImage.headline" /></h2>
+			<p><f:translate key="templates_consultant_prepareDelete.deleteImage.description" /></p>
+
+			<button class="button secondary featherlight-close" onclick="removeContactPersonImage({fileUid},{contactPerson.uid},{imageNumber}); return false;">
+				<span>
+					<f:translate key="templates_consultant_prepareDelete.deleteImage.labelYes" />
+				</span>
+			</button>
+
+			<!-- Hint: featherlight-close does not work when span-tags in link - don't know why -->
+			<a class="button featherlight-close" href="#" >
+				<f:translate key="templates_consultant_prepareDelete.deleteImage.labelNo" />
+			</a>
+		</f:if>
+	</div>
+</f:section>

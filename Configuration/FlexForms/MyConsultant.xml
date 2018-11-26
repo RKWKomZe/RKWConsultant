@@ -1,0 +1,40 @@
+
+<!-- Defines only several options for the standard Rkwconsultant-Plugin (not for MyList-Plugin, Maps, Gallery etc...) -->
+
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:flexform.myConsultant.sheetTitle</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:flexform.myConsultant.action</label>
+                            <config>
+                                <type>select</type>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:flexform.myConsultant.action.I.list</numIndex>
+                                        <numIndex index="1">Consultant->myList;Consultant->show;</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:flexform.myConsultant.action.I.new</numIndex>
+                                        <numIndex index="1">Consultant->new;Consultant->create;Consultant->disable;ConsultantService->choose;ConsultantService->new;ConsultantService->create;Consultant->myList;</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2">
+                                        <numIndex index="0">LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:flexform.myConsultant.action.I.edit</numIndex>
+                                        <numIndex index="1">Consultant->edit;Consultant->update;Consultant->disable;Consultant->myList;Consultant->removeFile;ConsultantService->choose;ConsultantService->new;ConsultantService->create;ConsultantService->delete;ConsultantService->edit;ConsultantService->update;ConsultantService->removeFile;</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>
+
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

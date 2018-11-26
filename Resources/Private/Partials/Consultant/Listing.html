@@ -1,0 +1,60 @@
+{namespace vh=RKW\RkwConsultant\ViewHelpers}
+
+<f:for each="{consultantList}" as="consultant" iteration="iter">
+
+	<div class="box-wrapper">
+		<f:link.action action="show" controller="Consultant" pluginName="Rkwconsultant" extensionName="RkwConsultant" pageUid="{pageDetailUid}" arguments="{consultant : consultant}" class="box topic-1 event big" title="{consultant.company}" target="_blank">
+		<header>
+			<p> {consultant.company} </p>
+			</header>
+			<div class="box-content">
+				<div class="wysiwyg">
+					<f:if condition="{consultant.distance}">
+						<p class="event-date"><f:format.number decimals="1" decimalSeparator="," thousandsSeparator=".">{consultant.distance}</f:format.number> km</p>
+					</f:if>
+					<p>
+						{consultant.address}
+						<br>
+						{consultant.zip} {consultant.city}
+						<br>
+						<f:translate key="partials_consultant_listing.telephone" extensionName="RkwConsultant" />: {consultant.telephone}
+						<br>
+					</p>
+				</div>
+			</div>
+			<footer>
+				<p class="icon-person">
+					<f:if condition="{networkOnly}">
+                        <f:then>
+                            <f:translate key="partials_consultant_listing.network" extensionName="RkwConsultant" />
+                        </f:then>
+                        <f:else>
+                            <f:translate key="partials_consultant_listing.energyconsultant" extensionName="RkwConsultant" />
+                        </f:else>
+                    </f:if>
+				</p>
+			</footer>
+		</f:link.action>
+	</div>
+
+</f:for>
+
+<f:if condition="{showMoreLink}">
+	<div class="box-wrapper">
+		<f:link.action action="filter" controller="Ajax" pluginName="Rkwconsultant" extensionName="RkwConsultant" id="more-link-{page}" class="box help ajax next-page small autoload" title="<f:translate key='partials_consultant_listing.morebox2' extensionName='RkwConsultant' />" rel="nofollow" target="_blank" additionalParams="{tx_rkwconsultant_rkwconsultant: '{location: location, page: pageMore, networkOnly : networkOnly}', type: '{typeNum}'}" additionalAttributes="{data-page-type: '{typeNum}'}" >
+			<header>
+				<p>
+					<f:translate key="partials_consultant_listing.morebox1" extensionName="RkwConsultant" />
+					<br>
+					<strong>
+						<f:translate key="partials_consultant_listing.morebox2" extensionName="RkwConsultant" />
+					</strong>
+				</p>
+			</header>
+		</f:link.action>
+	</div>
+</f:if>
+
+
+
+

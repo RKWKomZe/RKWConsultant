@@ -1,0 +1,33 @@
+{namespace vh=RKW\RkwMailer\ViewHelpers}
+<f:layout name="Email/{mailType}" />
+
+
+<!-- PLAINTEXT -->
+<!-- No intend here !!! -->
+<f:section name="Plaintext">
+<vh:frontend.translate key="templates_email_adminApproveMail.headline" languageKey="{backendUser.lang}" extensionName="rkwConsultant" arguments="{0 : backendUser.realName}" />
+
+<vh:frontend.translate key="templates_email_adminApproveMail.text1" languageKey="{backendUser.lang}" extensionName="rkwConsultant" arguments="{0 : frontendUser.firstName, 1: frontendUser.lastName, 2: frontendUser.uid}"/>
+
+<vh:frontend.translate key="templates_email_adminApproveMail.textPreview" languageKey="{backendUser.lang}" extensionName="rkwConsultant" />
+<vh:frontend.link action="preview" controller="Consultant" extensionName="rkwConsultant" pluginName="rkwConsultant" absolute="TRUE" pageUid="{pageUid}" additionalParams="{tx_rkwconsultant_rkwconsultant: {user: consultant.sha1}}" section="rkw-consultant" />
+
+<vh:frontend.translate key="templates_email_adminApproveMail.textEnable" languageKey="{backendUser.lang}" extensionName="rkwConsultant" />
+<vh:frontend.link action="enable" controller="Consultant" extensionName="rkwConsultant" pluginName="rkwConsultant" absolute="TRUE" pageUid="{pageUid}" additionalParams="{tx_rkwconsultant_rkwconsultant: {user: consultant.sha1}}" section="rkw-consultant" />
+</f:section>
+
+<!-- HTML -->
+<f:section name="Html">
+	<h1><vh:frontend.translate key="templates_email_adminApproveMail.headline" languageKey="{backendUser.lang}" extensionName="rkwConsultant" arguments="{0 : backendUser.realName}" /></h1>
+	<p><vh:frontend.translate key="templates_email_adminApproveMail.text1" languageKey="{backendUser.lang}" extensionName="rkwConsultant" arguments="{0 : frontendUser.firstName, 1: frontendUser.lastName, 2: frontendUser.uid}" /></p>
+	<p>
+		<a href="<vh:frontend.link action='preview' controller='Consultant' extensionName='rkwConsultant' pluginName='rkwConsultant' absolute='TRUE' pageUid='{pageUid}' additionalParams='{tx_rkwconsultant_rkwconsultant: {user: consultant.sha1}}' section='rkw-consultant' />">
+			<vh:frontend.translate key="templates_email_adminApproveMail.textPreview" languageKey="{backendUser.lang}" extensionName="rkwConsultant"/>
+		</a>
+	</p>
+	<p>
+		<a href="<vh:frontend.link action='enable' controller='Consultant' extensionName='rkwConsultant' pluginName='rkwConsultant' absolute='TRUE' pageUid='{pageUid}' additionalParams='{tx_rkwconsultant_rkwconsultant: {user: consultant.sha1}}' section='rkw-consultant' />">
+			<vh:frontend.translate key="templates_email_adminApproveMail.textEnable" languageKey="{backendUser.lang}" extensionName="rkwConsultant" />
+		</a>
+	</p>
+</f:section>

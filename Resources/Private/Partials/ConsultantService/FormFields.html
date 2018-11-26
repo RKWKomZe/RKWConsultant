@@ -1,0 +1,102 @@
+{namespace vh=RKW\RkwConsultant\ViewHelpers}
+{namespace rkwRegistration=RKW\RkwRegistration\ViewHelpers}
+
+
+<div class="v320-1-of-1">
+
+	<!-- item uid -->
+	<f:form.hidden property="consultant" value="{consultant.uid}" />
+
+	<!-- basic service uid -->
+	<f:form.hidden property="basicService" value="{basicService.uid}" />
+
+	<!-- furtherInformations (field of ConsultantService) -->
+	<div class="v320-1">
+
+		<label class="form-label" for="furtherInformations">
+			<f:translate key="tx_rkwconsultant_domain_model_consultantservice.further_informations" />
+			<f:if condition="<vh:isMandatoryField fieldName='furtherInformations' mandatoryFields='{settings.mandatoryFields.consultantService}' />">
+				<span class='optional'>&nbsp;<f:translate key="tx_rkwconsultant_fluid.label_optional" /></span>
+			</f:if>
+		</label>
+		<f:form.textarea id="furtherInformations" value="{furtherInformations}" property="furtherInformations" name="furtherInformations" rows="5" placeholder="<f:translate key=\"partials_consultantService_formFields.placeholder.information\" />" />
+	</div>
+
+
+	<!-- subservices (child of BasicService) -->
+	<f:if condition="{basicService.subService}">
+
+		<h4><f:translate key="partials_consultantService_formFields.subservice.headline" /></h4>
+
+		<div class="v320-1">
+			<f:for each="{basicService.subService}" as="subServiceItem" iteration="iter">
+				<span class="checkbox">
+					<f:if condition="<vh:checkValueInObjectStorage objectStorage='{consultantService.subService}' property='uid' value='{subServiceItem.uid}' />">
+						<f:then>
+							<f:form.checkbox checked="TRUE" id="{subServiceItem.uid}" property="subServiceArray.{iter.index}" value="{subServiceItem.uid}" name="subServiceArray.{iter.index}" />
+						</f:then>
+						<f:else>
+							<f:form.checkbox id="{subServiceItem.uid}" property="subServiceArray.{iter.index}" value="{subServiceItem.uid}" name="subServiceArray.{iter.index}" />
+						</f:else>
+					</f:if>
+					{subServiceItem.title}
+				</span>
+			</f:for>
+		</div>
+	</f:if>
+
+	<!-- qualifications (child of BasicService) -->
+	<f:if condition="{basicService.qualification}">
+
+		<h4><f:translate key="partials_consultantService_formFields.qualifications.headline" /></h4>
+
+		<div class="v320-1">
+
+			<f:for each="{basicService.qualification}" as="qualificationItem" iteration="iter">
+				<span class="checkbox">
+					<f:if condition="<vh:checkValueInObjectStorage objectStorage='{consultantService.qualification}' property='uid' value='{qualificationItem.uid}' />">
+						<f:then>
+							<f:form.checkbox checked="TRUE" id="{qualificationItem.uid}" property="qualificationArray.{iter.index}" value="{qualificationItem.uid}" name="qualificationArray.{iter.index}" />
+						</f:then>
+						<f:else>
+							<f:form.checkbox id="{qualificationItem.uid}" property="qualificationArray.{iter.index}" value="{qualificationItem.uid}" name="qualificationArray.{iter.index}" />
+						</f:else>
+					</f:if>
+					{qualificationItem.title}
+				</span>
+			</f:for>
+		</div>
+	</f:if>
+</div>
+
+<p>&nbsp;</p>
+
+<!-- contact persons -->
+<h3><f:translate key="partials_consultantService_formFields.headline" arguments="{0: '{basicService.title}'}" /></h3>
+
+<f:if condition="<f:count>{consultantService.contactPerson}</f:count> > 0">
+	<!-- use given contactPersons on edit -->
+	<f:then>
+		<f:for each="{consultantService.contactPerson}" as="contactPerson" iteration="i">
+
+			<!-- ACHTUNG: Unbedingt i.index übergeben!! Bei Übergabe von i.cycle werden nicht alle objekte beim editieren wiedergegeben!! -->
+			<f:render partial="ConsultantService/ContactPerson" arguments="{contactPerson:contactPerson, iteration:i.index}" />
+		</f:for>
+	</f:then>
+	<!-- create new contactPersons -->
+	<f:else>
+		<f:for each="{0:1,1:2,2:3}" as="contactPerson" iteration="i">
+			<f:render partial="ConsultantService/ContactPerson" arguments="{iteration:i.index}" />
+		</f:for>
+	</f:else>
+</f:if>
+
+<f:comment>
+<span class="checkbox">
+	<label>
+		<f:form.checkbox name="privacy" value="1" />
+		<rkwRegistration:privacyText />
+	</label>
+</span>
+</f:comment>
+
