@@ -28,10 +28,10 @@ $EM_CONF[$_EXTKEY] = array(
             'extbase' => '6.2.0-7.6.99',
             'fluid' => '6.2.0-7.6.99',
             'typo3' => '6.2.0-7.6.99',
-            'rkw_basics' => '7.6.0-7.6.99',
-			'rkw_mailer' => '7.6.0-7.6.99',
-			'rkw_registration' => '7.6.10-2.9.99',
-			'rkw_geolocation' => '7.6.10-2.9.99'
+            'rkw_basics' => '7.6.0-8.7.99',
+			'rkw_mailer' => '7.6.0-8.7.99',
+			'rkw_registration' => '7.6.10-8.7.99',
+			'rkw_geolocation' => '7.6.10-8.7.99'
 		),
 		'conflicts' => array(
 		),
