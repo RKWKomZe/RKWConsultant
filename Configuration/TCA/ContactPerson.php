@@ -27,7 +27,7 @@ $GLOBALS['TCA']['tx_rkwconsultant_domain_model_contactperson'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, salutation, title, first_name, last_name, telephone, email, image',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, first_name, last_name, telephone, email, image, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access'),
+		'1' => array('showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, first_name, last_name, telephone, email, image, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),

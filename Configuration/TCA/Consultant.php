@@ -31,7 +31,7 @@ $GLOBALS['TCA']['tx_rkwconsultant_domain_model_consultant'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, salutation, title, first_name, last_name, company, address, zip, city, state, telephone, fax, email, www, facebook, twitter, google_plus, longitude, latitude, short_description, reference, file, image, consultant_service, admin, subeditor, rkw_network, disabled',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, disabled, rkw_network, company, address, zip, city, telephone, fax, email, www, facebook, twitter, google_plus, short_description, reference, file, image, consultant_service, admin, subeditor, longitude, latitude, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access'),
+		'1' => array('showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden,--palette--;;1, disabled, rkw_network, company, address, zip, city, telephone, fax, email, www, facebook, twitter, google_plus, short_description, reference, file, image, consultant_service, admin, subeditor, longitude, latitude, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
