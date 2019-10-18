@@ -28,7 +28,7 @@ $GLOBALS['TCA']['tx_rkwconsultant_domain_model_basicservice'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, short_description, qualification, sub_service, usergroup',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, short_description, qualification, sub_service, usergroup, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access'),
+		'1' => array('showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden,--palette--;;1, title, short_description, qualification, sub_service, usergroup, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
