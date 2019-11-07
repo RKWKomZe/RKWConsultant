@@ -256,8 +256,8 @@ plugin.tx_rkwconsultant.libs {
 
 
 
-tx_rkwconsultant_ajax = PAGE
-tx_rkwconsultant_ajax {
+txRkwConsultantAjax = PAGE
+txRkwConsultantAjax {
   typeNum = {$plugin.tx_rkwconsultant.settings.pageTypeAjax}
   config {
     disableAllHeaderCode = 1
@@ -292,8 +292,8 @@ tx_rkwconsultant_ajax {
 }
 
 
-tx_rkwconsultant_ajax_list = PAGE
-tx_rkwconsultant_ajax_list {
+txRkwConsultantAjaxList = PAGE
+txRkwConsultantAjaxList {
 	typeNum = {$plugin.tx_rkwconsultant.settings.pageTypeAjaxForConsultantList}
 	config {
 		disableAllHeaderCode = 1
