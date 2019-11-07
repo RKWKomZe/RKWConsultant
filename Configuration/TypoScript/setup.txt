@@ -55,9 +55,9 @@ plugin.tx_rkwconsultant {
 		storagePid = {$plugin.tx_rkwconsultant.persistence.storagePid}
 	}
 	features {
-
+        # see: https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/8.5/Breaking-78002-EnforceCHashArgumentForExtbaseActions.html
+        requireCHashArgumentForActionArguments = 0
 	}
-
 	settings {
 
         sysFileStorageUid = 1
