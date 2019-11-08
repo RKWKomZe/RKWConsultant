@@ -199,7 +199,7 @@ call_user_func(
         //=================================================================
         // Configure Hook
         //=================================================================
-        $TYPO3_CONF_VARS['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][$extKey] = 'RKW\\RkwConsultant\\Hooks\\TceMainHooks';
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][$extKey] = 'RKW\\RkwConsultant\\Hooks\\TceMainHooks';
 
 
         //=================================================================
