@@ -18,7 +18,8 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	<f:translate key="templates_consultant_new.steps" />
 	<p><f:translate key="templates_consultant_new.introduction" /></p>
 
-	<f:flashMessages renderMode="div" />
+	<f:render partial="FlashMessages" arguments="{_all}" />
+
 	<f:render partial="FormErrors" arguments="{object:Consultant}" />
 
 	<f:form class="form-fields" action="create" enctype="multipart/form-data" name="consultant" object="{consultant}">

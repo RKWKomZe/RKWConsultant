@@ -19,7 +19,8 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	<f:translate key="templates_consultantService_new.steps" />
 	<p><f:translate key="templates_consultantService_new.description" /></p>
 
-	<f:flashMessages renderMode="div" />
+	<f:render partial="FlashMessages" arguments="{_all}" />
+
 	<f:render partial="FormErrors" arguments="{object:ConsultantService}" />
 
 	<!-- Subheadline -->
