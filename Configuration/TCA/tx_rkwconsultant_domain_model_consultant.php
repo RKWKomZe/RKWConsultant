@@ -1,12 +1,6 @@
 <?php
-if (!defined ('TYPO3_MODE')) {
-	die ('Access denied.');
-}
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_rkwconsultant_domain_model_consultant', 'EXT:rkw_consultant/Resources/Private/Language/locallang_csh_tx_rkwconsultant_domain_model_consultant.xlf');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_rkwconsultant_domain_model_consultant');
-$GLOBALS['TCA']['tx_rkwconsultant_domain_model_consultant'] = array(
-	'ctrl' => array(
+return [
+	'ctrl' => [
 		'title'	=> 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant',
 		'label' => 'company',
 		'label_alt' => 'last_name',
@@ -16,9 +10,9 @@ $GLOBALS['TCA']['tx_rkwconsultant_domain_model_consultant'] = array(
 		'crdate' => 'crdate',
 		'cruser_id' => 'cruser_id',
 		'dividers2tabs' => TRUE,
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden'
-        ),
+        ],
 
 		'languageField' => 'sys_language_uid',
 		'transOrigPointerField' => 'l10n_parent',
@@ -26,373 +20,373 @@ $GLOBALS['TCA']['tx_rkwconsultant_domain_model_consultant'] = array(
 
 		'searchFields' => 'salutation,title,first_name,last_name,company,address,zip,city,state,telephone,fax,email,www,facebook,twitter,google_plus,rkw_network,longitude,latitude,short_description,reference,file,image,consultant_service,admin,subeditor,sha1,sha1_valid_until,disabled',
 		'iconfile' => 'EXT:rkw_consultant/Resources/Public/Icons/tx_rkwconsultant_domain_model_consultant.gif'
-	),
-	'interface' => array(
+	],
+	'interface' => [
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, salutation, title, first_name, last_name, company, address, zip, city, state, telephone, fax, email, www, facebook, twitter, google_plus, longitude, latitude, short_description, reference, file, image, consultant_service, admin, subeditor, rkw_network, disabled',
-	),
-	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, disabled, rkw_network, company, address, zip, city, telephone, fax, email, www, facebook, twitter, google_plus, short_description, reference, file, image, consultant_service, admin, subeditor, longitude, latitude, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access'),
-	),
-	'palettes' => array(
-		'1' => array('showitem' => ''),
-	),
-	'columns' => array(
+	],
+	'types' => [
+		'1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden,--palette--;;1, disabled, rkw_network, company, address, zip, city, telephone, fax, email, www, facebook, twitter, google_plus, short_description, reference, file, image, consultant_service, admin, subeditor, longitude, latitude, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access'],
+	],
+	'palettes' => [
+		'1' => ['showitem' => ''],
+	],
+	'columns' => [
 	
-		'sys_language_uid' => array(
+		'sys_language_uid' => [
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
-			'config' => array(
+			'config' => [
 				'type' => 'select',
 				'renderType' => 'selectSingle',
 				'foreign_table' => 'sys_language',
 				'foreign_table_where' => 'ORDER BY sys_language.title',
                 'default' => 0,
-				'items' => array(
-					array('LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages', -1),
-					array('LLL:EXT:lang/locallang_general.xlf:LGL.default_value', 0)
-				),
-			),
-		),
-		'l10n_parent' => array(
+				'items' => [
+					['LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages', -1],
+					['LLL:EXT:lang/locallang_general.xlf:LGL.default_value', 0],
+				],
+			],
+		],
+		'l10n_parent' => [
 			'displayCond' => 'FIELD:sys_language_uid:>:0',
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
-			'config' => array(
+			'config' => [
 				'type' => 'select',
 				'renderType' => 'selectSingle',
-				'items' => array(
-					array('', 0),
-				),
+				'items' => [
+					['', 0],
+				],
 				'foreign_table' => 'tx_rkwconsultant_domain_model_consultant',
 				'foreign_table_where' => 'AND tx_rkwconsultant_domain_model_consultant.pid=###CURRENT_PID### AND tx_rkwconsultant_domain_model_consultant.sys_language_uid IN (-1,0)',
-			),
-		),
-		'l10n_diffsource' => array(
-			'config' => array(
+			],
+		],
+		'l10n_diffsource' => [
+			'config' => [
 				'type' => 'passthrough',
-			),
-		),
-        'hidden' => array(
+			],
+		],
+        'hidden' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type' => 'check',
-            ),
-        ),
-		'salutation' => array(
+            ],
+        ],
+		'salutation' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.salutation',
-			'config' => array(
+			'config' => [
 				'type' => 'select',
 				'renderType' => 'selectSingle',
-				'items' => array(
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.general_choice', 0),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.salutation.I.female', '1'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.salutation.I.male', '99'),
-				),
+				'items' => [
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.general_choice', 0],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.salutation.I.female', '1'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.salutation.I.male', '99'],
+				],
 				'size' => 1,
 				'maxitems' => 1,
-			)
-		),
-		'title' => array(
+			],
+		],
+		'title' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.title',
-			'config' => array(
+			'config' => [
 				'type' => 'select',
 				'renderType' => 'selectSingle',
-				'items' => array(
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.general_choice', 0),
-					array('Dr.', '1'),
-					array('Prof.', '2'),
-				),
+				'items' => [
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.general_choice', 0],
+					['Dr.', '1'],
+					['Prof.', '2'],
+				],
 				'size' => 1,
 				'maxitems' => 1,
-			)
-		),
-		'first_name' => array(
+			],
+		],
+		'first_name' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.first_name',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim'
-			),
-		),
-		'last_name' => array(
+			],
+		],
+		'last_name' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.last_name',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim'
-			),
-		),
-		'company' => array(
+			],
+		],
+		'company' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.company',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim,required'
-			),
-		),
-		'address' => array(
+			],
+		],
+		'address' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.address',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim,required'
-			),
-		),
-		'zip' => array(
+			],
+		],
+		'zip' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.zip',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim,required'
-			),
-		),
+			],
+		],
         // only needed for SQL-query with distance calculation!
-        'distance' => array(
+        'distance' => [
             'type' => 'passthrough'
-        ),
+        ],
 
-		'city' => array(
+		'city' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.city',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim,required'
-			),
-		),
-		'state' => array(
+			],
+		],
+		'state' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state',
-			'config' => array(
+			'config' => [
 				'type' => 'select',
 				'renderType' => 'selectSingle',
-				'items' => array(
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.general_choice', 0),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state1', '1'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state2', '2'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state3', '3'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state4', '4'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state5', '5'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state6', '6'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state7', '7'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state8', '8'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state9', '9'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state10', '10'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state11', '11'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state12', '12'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state13', '13'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state14', '14'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state15', '15'),
-					array('LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state16', '16'),
-				),
+				'items' => [
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.general_choice', 0],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state1', '1'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state2', '2'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state3', '3'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state4', '4'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state5', '5'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state6', '6'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state7', '7'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state8', '8'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state9', '9'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state10', '10'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state11', '11'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state12', '12'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state13', '13'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state14', '14'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state15', '15'],
+					['LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.state.I.state16', '16'],
+				],
 				'size' => 1,
 				'maxitems' => 1,
-			),
-		),
-		'telephone' => array(
+			],
+		],
+		'telephone' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.telephone',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim'
-			),
-		),
-		'fax' => array(
+			],
+		],
+		'fax' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.fax',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim'
-			),
-		),
-		'email' => array(
+			],
+		],
+		'email' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.email',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim,required'
-			),
-		),
-		'www' => array(
+			],
+		],
+		'www' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.www',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
-                'wizards' => array(
-                    'link' => array(
+                'wizards' => [
+                    'link' => [
                         'type' => 'popup',
                         'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
                         'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
-                        'module' => array(
+                        'module' => [
                             'name' => 'wizard_link',
-                            'urlParameters' => array(
+                            'urlParameters' => [
                                 'mode' => 'wizard',
-                            )
-                        ),
+                            ],
+                        ],
                         'JSopenParams' => 'height=400,width=550,status=0,menubar=0,scrollbars=1',
-                        'params' => Array(
+                        'params' => [
                             // List of tabs to hide in link window. Allowed values are:
                             // file, mail, page, spec, folder, url
                             'blindLinkOptions' => 'mail,file,page,spec,folder',
 
                             // allowed extensions for file
                             //'allowedExtensions' => 'mp3,ogg',
-                        )
-                    )
-                ),
+                        ],
+                    ],
+                ],
                 'softref' => 'typolink'
-			),
-		),
-		'facebook' => array(
+			],
+		],
+		'facebook' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.facebook',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
-                'wizards' => array(
-                    'link' => array(
+                'wizards' => [
+                    'link' => [
                         'type' => 'popup',
                         'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
                         'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
-                        'module' => array(
+                        'module' => [
                             'name' => 'wizard_link',
-                            'urlParameters' => array(
+                            'urlParameters' => [
                                 'mode' => 'wizard',
-                            )
-                        ),
+                            ],
+                        ],
                         'JSopenParams' => 'height=400,width=550,status=0,menubar=0,scrollbars=1',
-                        'params' => Array(
+                        'params' => [
                             // List of tabs to hide in link window. Allowed values are:
                             // file, mail, page, spec, folder, url
                             'blindLinkOptions' => 'mail,file,page,spec,folder',
 
                             // allowed extensions for file
                             //'allowedExtensions' => 'mp3,ogg',
-                        )
-                    )
-                ),
+                        ],
+                    ],
+                ],
                 'softref' => 'typolink'
-			),
-		),
-		'twitter' => array(
+			],
+		],
+		'twitter' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.twitter',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
-                'wizards' => array(
-                    'link' => array(
+                'wizards' => [
+                    'link' => [
                         'type' => 'popup',
                         'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
                         'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
-                        'module' => array(
+                        'module' => [
                             'name' => 'wizard_link',
-                            'urlParameters' => array(
+                            'urlParameters' => [
                                 'mode' => 'wizard',
-                            )
-                        ),
+                            ],
+                        ],
                         'JSopenParams' => 'height=400,width=550,status=0,menubar=0,scrollbars=1',
-                        'params' => Array(
+                        'params' => [
                             // List of tabs to hide in link window. Allowed values are:
                             // file, mail, page, spec, folder, url
                             'blindLinkOptions' => 'mail,file,page,spec,folder',
 
                             // allowed extensions for file
                             //'allowedExtensions' => 'mp3,ogg',
-                        )
-                    )
-                ),
+                        ],
+                    ],
+                ],
                 'softref' => 'typolink'
-			),
-		),
-		'google_plus' => array(
+			],
+		],
+		'google_plus' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.google_plus',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
-                'wizards' => array(
-                    'link' => array(
+                'wizards' => [
+                    'link' => [
                         'type' => 'popup',
                         'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
                         'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
-                        'module' => array(
+                        'module' => [
                             'name' => 'wizard_link',
-                            'urlParameters' => array(
+                            'urlParameters' => [
                                 'mode' => 'wizard',
-                            )
-                        ),
+                            ],
+                        ],
                         'JSopenParams' => 'height=400,width=550,status=0,menubar=0,scrollbars=1',
-                        'params' => Array(
+                        'params' => [
                             // List of tabs to hide in link window. Allowed values are:
                             // file, mail, page, spec, folder, url
                             'blindLinkOptions' => 'mail,file,page,spec,folder',
 
                             // allowed extensions for file
                             //'allowedExtensions' => 'mp3,ogg',
-                        )
-                    )
-                ),
+                        ],
+                    ],
+                ],
                 'softref' => 'typolink'
-			),
-		),
-		'short_description' => array(
+			],
+		],
+		'short_description' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.short_description',
-			'config' => array(
+			'config' => [
 				'type' => 'text',
 				'rows' => 10,
 				'eval' => 'trim'
-			),
-		),
-		'reference' => array(
+			],
+		],
+		'reference' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.reference',
-			'config' => array(
+			'config' => [
 				'type' => 'text',
 				'rows' => 10,
 				'eval' => 'trim'
-			),
-		),
-		'file' => array(
+			],
+		],
+		'file' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.file',
 			'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
 				'file',
-				array('maxitems' => 5),
+				['maxitems' => 5],
 				$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-			),
-		),
-		'image' => array(
+            ),
+		],
+		'image' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.image',
 			'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
 				'image',
-				array('maxitems' => 1),
+				['maxitems' => 1],
 				$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-			),
-		),
+            ),
+		],
 		/*
-		'consultant_service' => array(
+		'consultant_service' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.consultant_service',
-			'config' => array(
+			'config' => [
 				'type' => 'select',
 				'renderType' => 'selectMultipleSideBySide',
 				'size' => 8,
@@ -400,114 +394,114 @@ $GLOBALS['TCA']['tx_rkwconsultant_domain_model_consultant'] = array(
 				'maxitems' => 99,
 				'foreign_table' => 'tx_rkwconsultant_domain_model_consultantservice',
 				'foreign_table_where' => 'AND tx_rkwconsultant_domain_model_consultantservice.deleted = 0 AND tx_rkwconsultant_domain_model_consultantservice.hidden = 0',
-			),
-		),
+			],
+		],
 		*/
-		'consultant_service' => array(
+		'consultant_service' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.consultant_service',
-			'config' => array(
+			'config' => [
 				'type' => 'inline',
 				'foreign_table' => 'tx_rkwconsultant_domain_model_consultantservice',
                 'foreign_table_where' => 'AND tx_rkwconsultant_domain_model_consultantservice.deleted = 0 AND tx_rkwconsultant_domain_model_consultantservice.hidden = 0',
                 'foreign_field' => 'consultant',
 				'maxitems'      => 9999,
-				'appearance' => array(
+				'appearance' => [
 					'collapseAll' => 0,
 					'levelLinksPosition' => 'top',
 					'showSynchronizationLink' => 1,
 					'showPossibleLocalizationRecords' => 1,
 					'showAllLocalizationLink' => 1
-				),
-			),
-		),
-		'admin' => array(
+				],
+			],
+		],
+		'admin' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.admin',
-            'config' => array(
+            'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'size' => 8,
                 'minitems' => 0,
                 'maxitems' => 1,
                 'itemsProcFunc' => 'RKW\RkwConsultant\Helper\Tca->getFeUsers',
-            ),
-		),
-		'subeditor' => array(
+            ],
+		],
+		'subeditor' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.subeditor',
-			'config' => array(
+			'config' => [
 				'type' => 'select',
 				'renderType' => 'selectMultipleSideBySide',
 				'size' => 8,
 				'minitems' => 0,
 				'maxitems' => 99,
                 'itemsProcFunc' => 'RKW\RkwConsultant\Helper\Tca->getFeUsers',
-			)
-		),
+			],
+		],
 
-		'longitude' => array(
+		'longitude' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.longitude',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
 				'readOnly' => TRUE
-			),
-		),
-		'latitude' => array(
+			],
+		],
+		'latitude' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.latitude',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
 				'readOnly' => TRUE
-			),
-		),
-		'sha1' => array(
+			],
+		],
+		'sha1' => [
 			'exclude' => 1,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.sha1',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim'
-			),
-		),
-		'sha1_valid_until' => array(
+			],
+		],
+		'sha1_valid_until' => [
 			'exclude' => 1,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.sha1_valid_until',
-			'config' => array(
+			'config' => [
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim'
-			),
-		),
-		'rkw_network' => array(
+			],
+		],
+		'rkw_network' => [
 			'exclude' => 0,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.rkw_network',
-			'config' => array(
+			'config' => [
 				'type' => 'check',
 				'default' => 0,
-				'items' => array(
-					'1' => array(
+				'items' => [
+					'1' => [
 						'0' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.rkw_network.I.enable'
-					)
-				)
-			)
-		),
-		'disabled' => array(
+					],
+				],
+			],
+		],
+		'disabled' => [
 			'exclude' => 1,
 			'label' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.disabled',
-			'config' => array(
+			'config' => [
 				'type' => 'check',
-				'items' => array(
-					'1' => array(
+				'items' => [
+					'1' => [
 						'0' => 'LLL:EXT:rkw_consultant/Resources/Private/Language/locallang_db.xlf:tx_rkwconsultant_domain_model_consultant.disabled.I.disable'
-					)
-				)
-			),
-		),
-	),
-);
+					],
+				],
+			],
+		],
+	],
+];

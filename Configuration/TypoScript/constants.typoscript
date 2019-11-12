@@ -1,0 +1,135 @@
+
+plugin.tx_rkwconsultant {
+	view {
+		# cat=plugin.tx_rkwconsultant/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:rkw_consultant/Resources/Private/Templates/
+		# cat=plugin.tx_rkwconsultant/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:rkw_consultant/Resources/Private/Partials/
+		# cat=plugin.tx_rkwconsultant/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:rkw_consultant/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_rkwconsultant//a; type=string; label=Default storage PID
+		storagePid = 2262
+	}
+
+	settings {
+
+		# cat=plugin.tx_rkwconsultant//a; type=boolean; label=Include jQuery?
+		includeJQuery = 1
+
+		# cat=plugin.tx_rkwconsultant//a; type=boolean; label=Include Featherlight plugin (online ressouce)?
+		# Should be actived global
+        includeFeatherlight = 0
+
+		# cat=plugin.tx_rkwconsultant//a; type=boolean; label=Include JavaScript file?
+        includeJavaScript = 1
+
+		# cat=plugin.tx_rkwconsultant//a; type=boolean; label=Include CSS
+		# !! For hiding download fields (consultant->edit). Do not remove this css file / line !! Hau!
+		includeCSS = 1
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=PageType for Ajax
+		pageTypeAjax = 1449742214
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=PageType for Ajax consultant list
+		pageTypeAjaxForConsultantList = 1481724904
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=pageUid of enable / preview actions of consultant plugin
+		pageUid =
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=pageUid of list plugin
+		pageListUid =
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=elements per list page
+		itemsPerPage =
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=pageUid of detail plugin
+		pageDetailUid =
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=pageUid of restricted "Mein RKW"-Area, list-view
+		restrictedPageUid =
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=pageUid of restricted "Mein RKW"-Area, edit-view
+		restrictedPageEditUid =
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=pageUid of restricted "Mein RKW"-Area, new-view
+		restrictedPageNewUid =
+
+        # cat=plugin.tx_rkwconsultant//f; type=string; label=for preview and unlocking of an hidden consultant profile (after create / edit)
+        allowedRemoteAddr = 127.0.0.1
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=number of mandatory FILES (consultant)
+		numberOfMandatoryFiles = 0
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=number of mandatory IMAGES (consultant)
+		numberOfMandatoryImages = 0
+
+		# cat=plugin.tx_rkwconsultant//f; type=integer; label=number of mandatory ContactPersons (consultantService)
+        numberOfMandatoryContactPersons = 1
+
+
+        mandatoryFields {
+
+            # cat=plugin.tx_rkwconsultant//f; type=string; label=mandatory fields for consultant (e.g. salutation, title, firstName, lastName, company, address, zip, city, state, telephone, fax, email, www, facebook, twitter, googlePlus, shortDescription, reference)
+            consultant = salutation, firstName, lastName, company, address, zip, city, email
+
+            # cat=plugin.tx_rkwconsultant//f; type=string; label=mandatory fields for consultantService (e.g. furtherInformations, qualification, subService)
+            consultantService = furtherInformations
+
+            # cat=plugin.tx_rkwconsultant//f; type=string; label=mandatory fields for contactPerson (e.g. salutation, title, firstName, lastName, telephone, email)
+            contactPerson = salutation, firstName, lastName, email
+
+            # cat=plugin.tx_rkwconsultant//f; type=integer; label=define the number of contactPerson, that have to be given in the service form (Possible values: 1-3)
+            numberOfMandatoryContactPersons = 1
+
+            # cat=plugin.tx_rkwconsultant//f; type=boolean; label=Is the image for contactPerson mandatory?
+            contactPersonImageMandatory = 0
+
+            upload {
+
+                files {
+
+                    # cat=plugin.tx_rkwconsultant//f; type=string; label=allowed file extensions (e.g. pdf, txt)
+                    allowedTypes = pdf, txt
+
+                    # cat=plugin.tx_rkwconsultant//f; type=integer; label=allowed size in bytes (1MB = 1048576, 2MB = 2097152 etc.); if not set, check for file size is disabled
+                    allowedSize = 2097152
+
+                    # cat=plugin.tx_rkwconsultant//f; type=integer; label=Number of mandatory files (possible: 0-5)
+                    numberOfMandatoryFiles = 0
+                }
+
+                images {
+
+                    # cat=plugin.tx_rkwconsultant//f; type=string; label=allowed file extensions (e.g. png, jpg, gif, jpeg)
+                    allowedTypes = png, jpg, gif, jpeg
+
+                    # cat=plugin.tx_rkwconsultant//f; type=integer; label=allowed size in bytes (1MB = 1048576, 2MB = 2097152 etc.); if not set, check for file size is disabled
+                    allowedSize = 2097152
+
+                    # cat=plugin.tx_rkwconsultant//f; type=integer; label=Number of mandatory files (possible: 0-5)
+                    numberOfMandatoryImages = 0
+                }
+
+            }
+        }
+
+
+        consultant {
+
+            # cat=plugin.tx_rkwconsultant//f; type=boolean; label=unlocking by admin (1 = activated)
+            adminUnlocking = 1
+
+            # cat=plugin.tx_rkwconsultant//f; type=string; label=ids of admins for unlocking consultant profile (comma seperated)
+            adminIdsForEmail = 1
+
+            # cat=plugin.tx_rkwconsultant//f; type=integer; label=max profiles per user (no value = no limit)
+            maxProfilesUser = 10
+
+            # cat=plugin.tx_rkwconsultant//f; type=integer; label=list of allowed usergroups for profile owners in BE
+            allowedOwnerGroupsList = 3,5
+        }
+
+	}
+}
