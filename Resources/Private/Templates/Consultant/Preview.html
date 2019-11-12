@@ -20,7 +20,8 @@ Otherwise your changes will be overwritten the next time you save the extension 
         </div>
     </div>
 
-    <f:flashMessages renderMode="div" />
+    <f:render partial="FlashMessages"  arguments="{_all}" />
+
     <f:render partial="Consultant/Properties" arguments="{_all}" />
 
 </f:section>

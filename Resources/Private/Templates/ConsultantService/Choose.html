@@ -20,7 +20,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	<p><f:translate key="templates_consultantService_choose.description" /></p>
 
 	<!-- Messages -->
-	<f:flashMessages renderMode="div" />
+	<f:render partial="FlashMessages" arguments="{_all}" />
 	<f:render partial="FormErrors" arguments="{object:BasicService}" />
 
 	<!-- Form -->
