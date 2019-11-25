@@ -88,8 +88,8 @@ call_user_func(
         $pluginName = strtolower('Rkwconsultantmyconsultant');
         $pluginSignature = $extensionName.'_'.$pluginName;
 
-        $GLOBALS['TCA']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'layout,select_key,pages';
-        $GLOBALS['TCA']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+        $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 'layout,select_key,pages';
+        $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
             $pluginSignature,
             'FILE:EXT:'.$extKey . '/Configuration/FlexForms/MyConsultant.xml'
