@@ -1,10 +1,5 @@
 <?php
-
 namespace RKW\RkwConsultant\ViewHelpers;
-
-use TYPO3\CMS\Fluid\Core\Rendering\RenderingContextInterface;
-use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
-use TYPO3\CMS\Fluid\Core\ViewHelper\Facets\CompilableInterface;
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -19,55 +14,114 @@ use TYPO3\CMS\Fluid\Core\ViewHelper\Facets\CompilableInterface;
  * The TYPO3 project - inspiring people to share!
  */
 
-/**
- * Class HtmlLinkViewHelper
- *
- * @author Maximilian Fäßler <maximilian@faesslerweb.de>
- * @author Steffen Kroggel <developer@steffenkroggel.de>
- * @copyright Rkw Kompetenzzentrum
- * @package RKW_RkwConsultant
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
- */
-class HtmlLinkViewHelper extends AbstractViewHelper implements CompilableInterface
-{
+use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
+use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
+
+$currentVersion = \TYPO3\CMS\Core\Utility\VersionNumberUtility::convertVersionNumberToInteger(TYPO3_version);
+if ($currentVersion < 8000000) {
 
     /**
-     * Sets HTML-Links from plaintext
+     * Class HtmlLinkViewHelper
      *
-     * @param string $value string to format
-     * @return string the altered string.
-     * @api
+     * @author Maximilian Fäßler <maximilian@faesslerweb.de>
+     * @author Steffen Kroggel <developer@steffenkroggel.de>
+     * @copyright Rkw Kompetenzzentrum
+     * @package RKW_RkwConsultant
+     * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+     * @deprecated
      */
-    public function render($value = null)
+    class HtmlLinkViewHelper extends AbstractViewHelper
     {
-        return static::renderStatic(
-            array(
-                'value' => $value,
-            ),
-            $this->buildRenderChildrenClosure(),
-            $this->renderingContext
-        );
-    }
 
-    /**
-     * Applies preg_replace on the specified value.
-     *
-     * @param array $arguments
-     * @param \Closure $renderChildrenClosure
-     * @param \TYPO3\CMS\Fluid\Core\Rendering\RenderingContextInterface $renderingContext
-     * @return string
-     */
-    public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext)
-    {
-        $value = $arguments['value'];
-        if ($value === null) {
-            $value = $renderChildrenClosure();
+
+        /**
+         * Sets HTML-Links from plaintext
+         *
+         * @param string $value string to format
+         * @return string the altered string.
+         * @api
+         */
+        public function render($value = null)
+        {
+            return static::renderStatic(
+                array(
+                    'value' => $value,
+                ),
+                $this->buildRenderChildrenClosure(),
+                $this->renderingContext
+            );
         }
 
-        return preg_replace('/(http:\/\/([^\s]+))/i', '<a href="$1" target="_blank">$2</a>', $value);
-        //===
+        /**
+         * Applies preg_replace on the specified value.
+         *
+         * @param array $arguments
+         * @param \Closure $renderChildrenClosure
+         * @param \TYPO3\CMS\Fluid\Core\Rendering\RenderingContextInterface $renderingContext
+         * @return string
+         */
+        public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, \TYPO3\CMS\Fluid\Core\Rendering\RenderingContextInterface $renderingContext)
+        {
+            $value = $arguments['value'];
+            if ($value === null) {
+                $value = $renderChildrenClosure();
+            }
+
+            return preg_replace('/(http:\/\/([^\s]+))/i', '<a href="$1" target="_blank">$2</a>', $value);
+        }
     }
 
+} else {
 
+    /**
+     * Class HtmlLinkViewHelper
+     *
+     * @author Maximilian Fäßler <maximilian@faesslerweb.de>
+     * @author Steffen Kroggel <developer@steffenkroggel.de>
+     * @copyright Rkw Kompetenzzentrum
+     * @package RKW_RkwConsultant
+     * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+     */
+    class HtmlLinkViewHelper extends AbstractViewHelper
+    {
+
+
+        /**
+         * Sets HTML-Links from plaintext
+         *
+         * @param string $value string to format
+         * @return string the altered string.
+         * @api
+         */
+        public function render($value = null)
+        {
+            return static::renderStatic(
+                array(
+                    'value' => $value,
+                ),
+                $this->buildRenderChildrenClosure(),
+                $this->renderingContext
+            );
+        }
+
+        /**
+         * Applies preg_replace on the specified value.
+         *
+         * @param array $arguments
+         * @param \Closure $renderChildrenClosure
+         * @param RenderingContextInterface $renderingContext
+         * @return string
+         */
+        public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext)
+        {
+            $value = $arguments['value'];
+            if ($value === null) {
+                $value = $renderChildrenClosure();
+            }
+
+            return preg_replace('/(http:\/\/([^\s]+))/i', '<a href="$1" target="_blank">$2</a>', $value);
+        }
+    }
 }
+

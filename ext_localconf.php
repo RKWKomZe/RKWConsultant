@@ -148,36 +148,6 @@ call_user_func(
             'removeAllOfUserSignalSlot'
         );
 
-        /** @toDo: Finally delete when tested
-        if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('rkw_search')) {
-
-        $signalSlotDispatcher->connect(
-        'RKW\\RkwConsultant\\Controller\\ConsultantController',
-        \RKW\RkwConsultant\Controller\ConsultantController::SIGNAL_CONSULTANT_FOR_SEARCH,
-        'RKW\\RkwConsultant\\Service\\RkwSearchService',
-        'consultant'
-        );
-
-        $signalSlotDispatcher->connect(
-        'RKW\\RkwConsultant\\Controller\\ConsultantServiceController',
-        \RKW\RkwConsultant\Controller\ConsultantServiceController::SIGNAL_CONSULTANTSERVICE_FOR_SEARCH,
-        'RKW\\RkwConsultant\\Service\\RkwSearchService',
-        'consultantService'
-        );
-
-        // Signal Slot for varnish-extension
-        if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('varnish')) {
-
-        $signalSlotDispatcher->connect(
-        'RKW\\RkwConsultant\\Service\\RkwSearchService',
-        \RKW\RkwConsultant\Service\RkwSearchService::SIGNAL_CLEAR_PAGE_VARNISH,
-        'RKW\\RkwConsultant\\Service\\VarnishService',
-        'clearCacheOfPageEvent'
-        );
-        }
-        }
-         */
-
         // Signal Slot for varnish-extension
         if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('varnish')) {
 
