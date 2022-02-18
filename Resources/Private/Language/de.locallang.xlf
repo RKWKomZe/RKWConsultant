@@ -11,7 +11,7 @@
 			<!-- tx_rkwconsultant_domain_model_consultant -->
 			<trans-unit approved="no" id="tx_rkwconsultant_domain_model_consultant">
 				<source>Consultant</source>
-				<target phase-name="approval-1" state="final">Beratende</target>
+				<target phase-name="approval-1" state="final">Berater/Beraterin</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation">
 				<source>Salutation</source>
