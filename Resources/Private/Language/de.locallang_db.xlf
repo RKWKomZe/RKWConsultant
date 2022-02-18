@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-11-07T15:00:08Z" product-name="rkw_mailer">
-		<header/>
+	<file datatype="plaintext" target-language="de" source-language="en" original="messages" date="2014-11-07T15:00:08Z" product-name="rkw_mailer">
+		<header>
+      <phase-group>
+        <phase contact-email="berberich@rkw.de" process-name="approval" tool-id="lokalize-22.03.70" phase-name="approval-1" contact-name="Melanie" date="2022-02-18"/>
+      </phase-group>
+      <tool tool-version="22.03.70" tool-name="Lokalize" tool-id="lokalize-22.03.70"/>
+    </header>
 		<body>
 
 			<!-- tx_rkwconsultant_domain_model_consultant -->
@@ -10,9 +15,9 @@
 				<source>Choose an option</source>
 				<target>Bitte wählen</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_domain_model_consultant">
+			<trans-unit approved="no" id="tx_rkwconsultant_domain_model_consultant">
 				<source>RKW Consultants: Consultant</source>
-				<target>RKW Consultants: Berater</target>
+				<target phase-name="approval-1" state="final">RKW Consultants: Beratende</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation">
 				<source>Salutation</source>
@@ -264,9 +269,9 @@
 				<source>Sub Service</source>
 				<target>Spezielle Dienstleistung</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_domain_model_basicservice.usergroup">
+			<trans-unit approved="no" id="tx_rkwconsultant_domain_model_basicservice.usergroup">
 				<source>Usergroup</source>
-				<target>Nutzergruppe</target>
+				<target phase-name="approval-1" state="final">Nutzendengruppe</target>
 			</trans-unit>
 
 
@@ -344,24 +349,24 @@
 
 
 			<!-- tx_rkwconsultant_domain_model_frontenduser -->
-			<trans-unit id="tx_rkwconsultant_domain_model_frontenduser.role">
+			<trans-unit approved="no" id="tx_rkwconsultant_domain_model_frontenduser.role">
 				<source>Consultant role</source>
-				<target>Berater Rolle</target>
+				<target phase-name="approval-1" state="final">Beratenden Rolle</target>
 			</trans-unit>
 
 
 			<!-- ext_tables -->
-			<trans-unit id="tx_rkwconsultant_exttables.tab">
+			<trans-unit approved="no" id="tx_rkwconsultant_exttables.tab">
 				<source>Consultant</source>
-				<target>Berater</target>
+				<target phase-name="approval-1" state="final">Berater / Beraterin</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwconsultant_exttables.admin">
 				<source>Admin of</source>
 				<target>Admin von</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_exttables.subeditor">
+			<trans-unit approved="no" id="tx_rkwconsultant_exttables.subeditor">
 				<source>Subeditor of</source>
-				<target>Redakteur von</target>
+				<target phase-name="approval-1" state="final">Redaktion von</target>
 			</trans-unit>
 
 
