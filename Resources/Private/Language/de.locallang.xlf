@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-05-09T11:53:22Z" product-name="rkw_consultants">
-		<header/>
+	<file datatype="plaintext" target-language="de" source-language="en" original="messages" date="2014-05-09T11:53:22Z" product-name="rkw_consultants">
+		<header>
+      <phase-group>
+        <phase contact-email="berberich@rkw.de" process-name="approval" tool-id="lokalize-22.03.70" phase-name="approval-1" contact-name="Melanie" date="2022-02-18"/>
+      </phase-group>
+      <tool tool-version="22.03.70" tool-name="Lokalize" tool-id="lokalize-22.03.70"/>
+    </header>
 		<body>
 			<!-- tx_rkwconsultant_domain_model_consultant -->
-			<trans-unit id="tx_rkwconsultant_domain_model_consultant">
+			<trans-unit approved="no" id="tx_rkwconsultant_domain_model_consultant">
 				<source>Consultant</source>
-				<target>Berater</target>
+				<target phase-name="approval-1" state="final">Beratende</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwconsultant_domain_model_consultant.salutation">
 				<source>Salutation</source>
@@ -240,17 +245,17 @@
 
 
 			<!-- Templates/Consultant/New.html -->
-			<trans-unit id="templates_consultant_new.headline">
+			<trans-unit approved="no" id="templates_consultant_new.headline">
 				<source>New Consultant (Step 1 of 3)</source>
-				<target>Neues Berater-Profil anlegen (Schritt 1 von 3)</target>
+				<target phase-name="approval-1" state="final">Neues Beratenden-Profil anlegen (Schritt 1 von 3)</target>
 			</trans-unit>
 			<trans-unit id="templates_consultant_new.steps">
 				<source><![CDATA[<ul class="steps"><li class="current">1. Create Profile</li><li>2. Add Services</li><li>3. Add further information</li></ul>]]></source>
 				<target><![CDATA[<ul class="steps"><li class="current">1. Berater-Profil anlegen</li><li>2. Beratungsleistung hinzufügen</li><li>3. Ansprechpartner &amp; Details ergänzen</li></ul>]]></target>
 			</trans-unit>
-			<trans-unit id="templates_consultant_new.introduction">
+			<trans-unit approved="no" id="templates_consultant_new.introduction">
 				<source>Please enter the basic data of your consultant-profile here.</source>
-				<target>Geben Sie bitte zunächst die Basis-Daten Ihres Berater-Profiles an. Die hier gemachten Angaben sind unabhängig von Ihrem persönlichen Nutzer-Profil.</target>
+				<target phase-name="approval-1" state="final">Geben Sie bitte zunächst die Basis-Daten Ihres Beratenden-Profiles an. Die hier gemachten Angaben sind unabhängig von Ihrem persönlichen Nutzenden-Profil.</target>
 			</trans-unit>
 			<trans-unit id="templates_consultant_new.back">
 				<source>Back</source>
@@ -260,21 +265,21 @@
 				<source>Step 2</source>
 				<target>Schritt 2: Beratungsleistung wählen</target>
 			</trans-unit>
-			<trans-unit id="templates_consultant_new.no_more_profiles">
+			<trans-unit approved="no" id="templates_consultant_new.no_more_profiles">
 				<source>No more profiles can be created.</source>
-				<target>Sie haben die maximale Anzahl an Berater-Profilen erreicht. Sie benötigen weitere Profile? Unser Support hilft Ihnen gerne weiter.</target>
+				<target phase-name="approval-1" state="final">Sie haben die maximale Anzahl an Beratenden-Profilen erreicht. Sie benötigen weitere Profile? Unser Support hilft Ihnen gerne weiter.</target>
 			</trans-unit>
 
 
 
 			<!-- Templates/Consultant/Edit.html -->
-			<trans-unit id="templates_consultant_edit.headline">
+			<trans-unit approved="no" id="templates_consultant_edit.headline">
 				<source>Edit Consultant-Profile</source>
-				<target>Berater-Profil bearbeiten</target>
+				<target phase-name="approval-1" state="final">Beratenden-Profil bearbeiten</target>
 			</trans-unit>
-			<trans-unit id="templates_consultant_edit.description">
+			<trans-unit approved="no" id="templates_consultant_edit.description">
 				<source>Here you can edit your consultant-profile</source>
-				<target>Bearbeiten Sie hier die Basis-Daten Ihres Berater-Profils. Die hier gemachten Angaben sind unabhängig von Ihrem persönlichen Nutzer-Profil.</target>
+				<target phase-name="approval-1" state="final">Bearbeiten Sie hier die Basis-Daten Ihres Beratenden-Profils. Die hier gemachten Angaben sind unabhängig von Ihrem persönlichen Nutzenden-Profil.</target>
 			</trans-unit>
 			<trans-unit id="templates_consultant_edit.back">
 				<source>Back</source>
@@ -316,24 +321,24 @@
 
 
 			<!-- Templates/Consultant/MyList.html -->
-			<trans-unit id="templates_consultant_myList.headline">
+			<trans-unit approved="no" id="templates_consultant_myList.headline">
 				<source>My Consultants</source>
-				<target>Meine Berater-Profile</target>
+				<target phase-name="approval-1" state="final">Meine Beratenden-Profile</target>
 			</trans-unit>
-			<trans-unit id="templates_consultant_myList.newConsultant">
+			<trans-unit approved="no" id="templates_consultant_myList.newConsultant">
 				<source>New consultant</source>
-				<target>Neues Berater-Profil erstellen</target>
+				<target phase-name="approval-1" state="final">Neues Beratenden-Profil erstellen</target>
 			</trans-unit>
 
 
 			<!-- Templates/Consultant/List.html -->
-			<trans-unit id="templates_consultant_list.headline">
+			<trans-unit approved="no" id="templates_consultant_list.headline">
 				<source>Find consultants in your area</source>
-				<target>Finden Sie Energieberater in Ihrer Nähe</target>
+				<target phase-name="approval-1" state="final">Finden Sie Energieberatende in Ihrer Nähe</target>
 			</trans-unit>
-            <trans-unit id="templates_consultant_list.noResults">
+            <trans-unit approved="no" id="templates_consultant_list.noResults">
                 <source>Sorry, we couldn't find any match for your query.</source>
-                <target>Leider konnten wir keine passenden Berater finden.</target>
+                <target phase-name="approval-1" state="final">Leider konnten wir keine passenden Beratenden finden.</target>
             </trans-unit>
             <trans-unit id="templates_consultant_list.noResultsDetails">
                 <source>Please try another combination of filters.</source>
@@ -341,17 +346,17 @@
             </trans-unit>
 
             <!-- Templates/Consultant/PrepareDelete.html -->
-			<trans-unit id="templates_consultant_prepareDelete.deleteConsultant.headline">
+			<trans-unit approved="no" id="templates_consultant_prepareDelete.deleteConsultant.headline">
 				<source>Delete consultant</source>
-				<target>Berater-Profil löschen</target>
+				<target phase-name="approval-1" state="final">Beratenden-Profil löschen</target>
 			</trans-unit>
-			<trans-unit id="templates_consultant_prepareDelete.deleteConsultant.description">
+			<trans-unit approved="no" id="templates_consultant_prepareDelete.deleteConsultant.description">
 				<source>Really delete?</source>
-				<target>Möchten Sie das Berater-Profil wirklich löschen? Dies lässt sich nicht rückgängig machen!</target>
+				<target phase-name="approval-1" state="final">Möchten Sie das Beratenden-Profil wirklich löschen? Dies lässt sich nicht rückgängig machen!</target>
 			</trans-unit>
-			<trans-unit id="templates_consultant_prepareDelete.deleteConsultant.labelYes">
+			<trans-unit approved="no" id="templates_consultant_prepareDelete.deleteConsultant.labelYes">
 				<source>Yes</source>
-				<target>Ja, Berater-Profil endgültig löschen</target>
+				<target phase-name="approval-1" state="final">Ja, Beratenden-Profil endgültig löschen</target>
 			</trans-unit>
 			<trans-unit id="templates_consultant_prepareDelete.deleteConsultant.labelNo">
 				<source>No</source>
@@ -414,9 +419,9 @@
 				<source>Select a service</source>
 				<target>Welche Beratung bieten Sie an? (Schritt 2 von 3)</target>
 			</trans-unit>
-			<trans-unit id="templates_consultantService_choose.description">
+			<trans-unit approved="no" id="templates_consultantService_choose.description">
 				<source>In a first step select one of your services. In the next step you can add a contact person and additional information. You can also add more services thereafter.</source>
-				<target>Wählen Sie hier bitte zunächst eine Beratung, die Sie anbieten. Im nächsten Schritt können Sie unter anderem einen Ansprechpartner und weitere Informationen hinzufügen. Selbstverständlich können Sie danach auch weitere Beratungsleistungen zu Ihrem Profil hinzufügen.</target>
+				<target phase-name="approval-1" state="final">Wählen Sie hier bitte zunächst eine Beratung, die Sie anbieten. Im nächsten Schritt können Sie unter anderem eine Ansprechperson und weitere Informationen hinzufügen. Selbstverständlich können Sie danach auch weitere Beratungsleistungen zu Ihrem Profil hinzufügen.</target>
 			</trans-unit>
 			<trans-unit id="templates_consultantService_choose.steps">
 				<source><![CDATA[<ul class="steps"><li>1. Create Profile</li><li class="current">2. Add Services</li><li>3. Add further information</li></ul>]]></source>
@@ -426,9 +431,9 @@
 				<source>Escape</source>
 				<target>Abbrechen</target>
 			</trans-unit>
-			<trans-unit id="templates_consultantService_choose.step3">
+			<trans-unit approved="no" id="templates_consultantService_choose.step3">
 				<source>Step 3</source>
-				<target>Schritt 3: Ansprechpartner und Details ergänzen</target>
+				<target phase-name="approval-1" state="final">Schritt 3: Ansprechperson und Details ergänzen</target>
 			</trans-unit>
 
 
@@ -465,9 +470,9 @@
 				<source>Edit Service</source>
 				<target>Beratungsleistung bearbeiten</target>
 			</trans-unit>
-			<trans-unit id="templates_consultantService_edit.description">
+			<trans-unit approved="no" id="templates_consultantService_edit.description">
 				<source>Here you can edit your service and edit your contact persons.</source>
-				<target>Hier können Sie die Informationen zur ausgewählten Beratungsleistung sowie die betreffenden Ansprechpartner bearbeiten.</target>
+				<target phase-name="approval-1" state="final">Hier können Sie die Informationen zur ausgewählten Beratungsleistung sowie die betreffenden Ansprechpersonen bearbeiten.</target>
 			</trans-unit>
 			<trans-unit id="templates_consultantService_edit.subheadline">
 				<source>Further information on service %s</source>
@@ -603,17 +608,17 @@
 				<source>Show</source>
 				<target>Ansehen</target>
 			</trans-unit>
-			<trans-unit id="partials_consultant_options.profileChecking">
+			<trans-unit approved="no" id="partials_consultant_options.profileChecking">
 				<source>This profile is checked actually.</source>
-				<target>Das Beraterprofil befindet sich derzeit in Prüfung und ist daher nur teilweise sichtbar.</target>
+				<target phase-name="approval-1" state="final">Das Beratendenprofil befindet sich derzeit in Prüfung und ist daher nur teilweise sichtbar.</target>
 			</trans-unit>
-			<trans-unit id="partials_consultant_options.profileIncomplete">
+			<trans-unit approved="no" id="partials_consultant_options.profileIncomplete">
 				<source>This profile is incomplete.</source>
-				<target>Das Beraterprofil ist unvollständig. Bitte vervollständigen Sie Profil.</target>
+				<target phase-name="approval-1" state="final">Das Beratendenprofil ist unvollständig. Bitte vervollständigen Sie Profil.</target>
 			</trans-unit>
-            <trans-unit id="partials_consultant_options.profileOnline">
+            <trans-unit approved="no" id="partials_consultant_options.profileOnline">
                 <source>Your profile is online.</source>
-                <target>Ihr Beraterprofil ist online.</target>
+                <target phase-name="approval-1" state="final">Ihr Beratendenprofil ist online.</target>
             </trans-unit>
 			<trans-unit id="partials_consultant_options.edit">
 				<source>Edit</source>
@@ -649,9 +654,9 @@
 				<source>Qualifications:</source>
 				<target>Beschreibung:</target>
 			</trans-unit>
-			<trans-unit id="partials_consultantService_properties.contactLabel">
+			<trans-unit approved="no" id="partials_consultantService_properties.contactLabel">
 				<source>Contact:</source>
-				<target>Ansprechpartner:</target>
+				<target phase-name="approval-1" state="final">Ansprechperson:</target>
 			</trans-unit>
 
 
@@ -665,9 +670,9 @@
 				<source>Qualifications</source>
 				<target>Qualifikationen, Auszeichnungen und Förderprogramme</target>
 			</trans-unit>
-			<trans-unit id="partials_consultantService_formFields.contact.headline">
+			<trans-unit approved="no" id="partials_consultantService_formFields.contact.headline">
 				<source>Contact Person for %s at your company</source>
-				<target>Ansprechpartner für %s bei Ihnen</target>
+				<target phase-name="approval-1" state="final">Ansprechpersonen für %s bei Ihnen</target>
 			</trans-unit>
 			<trans-unit id="partials_consultantService_formFields.placeholder.information">
 				<source>Here you can enter further information in order to promote your service.</source>
@@ -691,21 +696,21 @@
 			<!-- #################################### -->
 			<!-- rkw mail service -->
 			<!-- #################################### -->
-			<trans-unit id="rkwMailService.adminApproveMail.subject">
+			<trans-unit approved="no" id="rkwMailService.adminApproveMail.subject">
 				<source>A consultant profile has to be approved</source>
-				<target>Ein Berater-Profil muss geprüft werden</target>
+				<target phase-name="approval-1" state="final">Ein Beratenden-Profil muss geprüft werden</target>
 			</trans-unit>
-			<trans-unit id="rkwMailService.userUnlockMail.unlock">
+			<trans-unit approved="no" id="rkwMailService.userUnlockMail.unlock">
 				<source>Consultant profile has been  unlocked</source>
-				<target>Berater-Profil freigeschaltet</target>
+				<target phase-name="approval-1" state="final">Beratenden-Profil freigeschaltet</target>
 			</trans-unit>
-			<trans-unit id="rkwMailService.adminDeleteMail.deleted">
+			<trans-unit approved="no" id="rkwMailService.adminDeleteMail.deleted">
 				<source>Consultant profile has been  unlocked</source>
-				<target>Ein Berater-Profil wurde gelöscht</target>
+				<target phase-name="approval-1" state="final">Ein Beratenden-Profil wurde gelöscht</target>
 			</trans-unit>
-			<trans-unit id="rkwMailService.userDeleteMail.deleted">
+			<trans-unit approved="no" id="rkwMailService.userDeleteMail.deleted">
 				<source>Consultant profile has been deleted</source>
-				<target>Eines Ihrer Beraterprofile wurde gelöscht</target>
+				<target phase-name="approval-1" state="final">Eines Ihrer Beratendenprofile wurde gelöscht</target>
 			</trans-unit>
 
 
@@ -714,9 +719,9 @@
 				<source>Hello %s,</source>
 				<target>Hallo %s,</target>
 			</trans-unit>
-			<trans-unit id="templates_email_adminApproveMail.text1">
+			<trans-unit approved="no" id="templates_email_adminApproveMail.text1">
 				<source>the user %s %s (ID: %s) as created a new consultant-profile or has edited an existing one. The profile has to be approved by you before it is public visible. In case of questions you can simply reply to this e-mail.</source>
-				<target>der Nutzer %s %s (ID: %s) hat ein neues Berater-Profil angelegt oder sein bestehendes Berater-Profil überarbeitet. Bevor es öffentlich sichtbar wird, muss es von Ihnen freigeschaltet werden. Bei Rückfragen können Sie auf diese E-Mail direkt antworten. Sie wird dann an den Nutzer weitergeleitet.</target>
+				<target phase-name="approval-1" state="final">der oder die Nutzende %s %s (ID: %s) hat ein neues Beratenden-Profil angelegt oder sein bestehendes Beratenden-Profil überarbeitet. Bevor es öffentlich sichtbar wird, muss es von Ihnen freigeschaltet werden. Bei Rückfragen können Sie auf diese E-Mail direkt antworten. Sie wird dann an den oder die Nutzende weitergeleitet.</target>
 			</trans-unit>
 			<trans-unit id="templates_email_adminApproveMail.textPreview">
 				<source>View Preview of Profile</source>
@@ -733,9 +738,9 @@
 				<source>Hello %s %s,</source>
 				<target>Hallo %s %s,</target>
 			</trans-unit>
-			<trans-unit id="templates_email_userUnlockMail.text1">
+			<trans-unit approved="no" id="templates_email_userUnlockMail.text1">
 				<source>your consultant-profile has been approved by one of our admins. Your profile is now visible to all users and can be found in our search.</source>
-				<target>Ihr Berater-Profil wurde von einem unserer Admins freigeschaltet. Ihr Profil ist damit nun öffentlich sichtbar und wird in unserer Suche angezeigt. Bei Rückfragen stehen wir Ihnen jederzeit gerne zur Verfügung.</target>
+				<target phase-name="approval-1" state="final">Ihr Beratenden-Profil wurde von einem unserer Admins freigeschaltet. Ihr Profil ist damit nun öffentlich sichtbar und wird in unserer Suche angezeigt. Bei Rückfragen stehen wir Ihnen jederzeit gerne zur Verfügung.</target>
 			</trans-unit>
 			<trans-unit id="templates_email_userUnlockMail.textShow">
 				<source>View  Profile</source>
@@ -748,9 +753,9 @@
 				<source>Hello %s,</source>
 				<target>Hallo %s,</target>
 			</trans-unit>
-			<trans-unit id="templates_email_adminDeleteMail.text1">
+			<trans-unit approved="no" id="templates_email_adminDeleteMail.text1">
 				<source>the user %s %s (ID: %s) has deleted one of his consultant-profiles. In case of questions you can simply reply to this e-mail.</source>
-				<target>der Nutzer %s %s (ID: %s) hat eines seiner Berater-Profile gelöscht. Bei Rückfragen können Sie auf diese E-Mail direkt antworten. Sie wird dann an den Nutzer weitergeleitet.</target>
+				<target phase-name="approval-1" state="final">der oder die Nutzende %s %s (ID: %s) hat eines der Beratenden-Profile gelöscht. Bei Rückfragen können Sie auf diese E-Mail direkt antworten. Sie wird dann an den oder die Nutzenden weitergeleitet.</target>
 			</trans-unit>
 			
 
@@ -759,9 +764,9 @@
 				<source>Hello %s %s,</source>
 				<target>Hallo %s %s,</target>
 			</trans-unit>
-			<trans-unit id="templates_email_userDeleteMail.text1">
+			<trans-unit approved="no" id="templates_email_userDeleteMail.text1">
 				<source>your consultant-profile has successfully been deleted. Please find the details of your consultant-profile below..</source>
-				<target>hiermit bestätigen wir Ihnen die Löschung eines Ihrer Beraterprofile. Die Details zum gelöschten Profil finden Sie untenstehend.</target>
+				<target phase-name="approval-1" state="final">hiermit bestätigen wir Ihnen die Löschung eines Ihrer Beratendenprofile. Die Details zum gelöschten Profil finden Sie untenstehend.</target>
 			</trans-unit>
 			
 
@@ -796,29 +801,29 @@
 				<source>A new consultant was created. Please add some services now to complete the registration.</source>
 				<target>Ein neues Beraterprofil wurde erstellt. Fügen Sie nun noch weitere Services hinzu, um die Registrierung abzuschließen.</target>
 			</trans-unit>-->
-			<trans-unit id="tx_rkwconsultant_controller_consultant.disabled">
+			<trans-unit approved="no" id="tx_rkwconsultant_controller_consultant.disabled">
 				<source>The profile has to be checked. Until then the profile details are hidden for other users.</source>
-				<target>Das Berater-Profil wurde gerade neu angelegt oder überarbeitet. Es muss daher zunächst von einem Admin freigeschaltet werden. Bis dahin sind die Profil-Details ausgeblendet.</target>
+				<target phase-name="approval-1" state="final">Das Beratenden-Profil wurde gerade neu angelegt oder überarbeitet. Es muss daher zunächst von einem Admin freigeschaltet werden. Bis dahin sind die Profil-Details ausgeblendet.</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_controller_consultant.directly_enabled">
+			<trans-unit approved="no" id="tx_rkwconsultant_controller_consultant.directly_enabled">
 				<source>Thanks for registering. The consultant profile is online now.</source>
-				<target>Woohoo! Ihr Berater-Profil ist nun online.</target>
+				<target phase-name="approval-1" state="final">Woohoo! Ihr Beratenden-Profil ist nun online.</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_controller_consultant.token_not_set">
+			<trans-unit approved="no" id="tx_rkwconsultant_controller_consultant.token_not_set">
 				<source>Necessary token not set.</source>
-				<target>Der verwendete Link enthält leider nicht alle nötigen Parameter. Bitte wenden Sie sich an den Administrator.</target>
+				<target phase-name="approval-1" state="final">Der verwendete Link enthält leider nicht alle nötigen Parameter. Bitte wenden Sie sich an den Support.</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_controller_consultant.token_invalid">
+			<trans-unit approved="no" id="tx_rkwconsultant_controller_consultant.token_invalid">
 				<source>Token invalid.</source>
-				<target>Der verwendete Link ist leider nicht valide. Bitte wenden Sie sich an den Administrator.</target>
+				<target phase-name="approval-1" state="final">Der verwendete Link ist leider nicht valide. Bitte wenden Sie sich an den Support.</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_controller_consultant.token_expired">
+			<trans-unit approved="no" id="tx_rkwconsultant_controller_consultant.token_expired">
 				<source>Token expired.</source>
-				<target>Der verwendete Link ist leider nicht mehr gültig. Bitte wenden Sie sich an den Administrator.</target>
+				<target phase-name="approval-1" state="final">Der verwendete Link ist leider nicht mehr gültig. Bitte wenden Sie sich an den Support.</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_controller_consultant.remote_addr_wrong">
+			<trans-unit approved="no" id="tx_rkwconsultant_controller_consultant.remote_addr_wrong">
 				<source>Remote address (your IP) is not valid.</source>
-				<target>Freigaben sind nur aus dem RKW Kompetenzzentrum heraus möglich. Bitte wenden Sie sich an den Administrator.</target>
+				<target phase-name="approval-1" state="final">Freigaben sind nur aus dem RKW Kompetenzzentrum heraus möglich. Bitte wenden Sie sich an den Support.</target>
 			</trans-unit>
 			<trans-unit id="tx_rkwconsultant_controller_consultant.enabled">
 				<source>This profile is enabled now.</source>
@@ -836,13 +841,13 @@
 				<source>Image deleted.</source>
 				<target>Das Bild wurde erfolgreich gelöscht.</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_controller_consultant.updated">
+			<trans-unit approved="no" id="tx_rkwconsultant_controller_consultant.updated">
 				<source>Profile updated.</source>
-				<target>Woohoo! Das Beraterprofil wurde erfolgreich aktualisiert.</target>
+				<target phase-name="approval-1" state="final">Woohoo! Das Beratendenprofil wurde erfolgreich aktualisiert.</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_controller_consultant.deleted">
+			<trans-unit approved="no" id="tx_rkwconsultant_controller_consultant.deleted">
 				<source>Consultant Profile deleted.</source>
-				<target>Das Berater-Profil wurde erfolgreich gelöscht. Sie können selbstverständlich jederzeit ein neues Profil anlegen.</target>
+				<target phase-name="approval-1" state="final">Das Beratenden-Profil wurde erfolgreich gelöscht. Sie können selbstverständlich jederzeit ein neues Profil anlegen.</target>
 			</trans-unit>
 
 
@@ -863,9 +868,9 @@
 				<source>No other services available at this time.</source>
 				<target>Es tut uns leid, aber derzeit stehen keine weiteren Beratungsleistungen zur Verfügung :(</target>
 			</trans-unit>
-			<trans-unit id="tx_rkwconsultant_controller_consultantservice.disabled">
+			<trans-unit approved="no" id="tx_rkwconsultant_controller_consultantservice.disabled">
 				<source>The profile has to be checked. Until then the profile details are hidden for other users.</source>
-				<target>Das Berater-Profil wurde gerade neu angelegt oder überarbeitet. Es muss daher zunächst von einem Admin freigeschaltet werden. Bis dahin sind die Profil-Details ausgeblendet.</target>
+				<target phase-name="approval-1" state="final">Das Beratenden-Profil wurde gerade neu angelegt oder überarbeitet. Es muss daher zunächst von einem Admin freigeschaltet werden. Bis dahin sind die Profil-Details ausgeblendet.</target>
 			</trans-unit>
 
 
@@ -912,194 +917,194 @@
 			<!-- #################################### -->
 
 			<!-- consultant -->
-			<trans-unit id="form.error.consultant.salutation" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.salutation">
 				<source>Salutation</source>
 				<target>Anrede</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.title" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.title">
 				<source>Title</source>
 				<target>Titel</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.firstName" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.firstName">
 				<source>First name</source>
 				<target>Vorname</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.lastName" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.lastName">
 				<source>Last name</source>
 				<target>Nachname</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.company" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.company">
 				<source>Company</source>
 				<target>Firma oder Name</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.address" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.address">
 				<source>Address</source>
 				<target>Adresse</target>
 			</trans-unit>
-            <trans-unit id="form.error.consultant.zip" xml:space="preserve">
+            <trans-unit xml:space="preserve" id="form.error.consultant.zip">
 				<source>ZIP</source>
 				<target>Postleitzahl</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.city" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.city">
 				<source>City</source>
 				<target>Stadt</target>
 			</trans-unit>
-            <trans-unit id="form.error.consultant.state" xml:space="preserve">
+            <trans-unit xml:space="preserve" id="form.error.consultant.state">
 				<source>State</source>
 				<target>Bundesland</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.telephone" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.telephone">
 				<source>Telephone</source>
 				<target>Telefon</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.fax" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.fax">
 				<source>Fax</source>
 				<target>Fax</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.email" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.email">
 				<source>Email</source>
 				<target>E-Mail</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.www" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.www">
 				<source>Webside</source>
 				<target>Webseite</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.facebook" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.facebook">
 				<source>Facebook</source>
 				<target>Facebook</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.twitter" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.twitter">
 				<source>Twitter</source>
 				<target>Twitter</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.googlePlus" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.googlePlus">
 				<source>Google+</source>
 				<target>Google+</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.shortDescription" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.shortDescription">
 				<source>Short description</source>
 				<target>Kurzbeschreibung</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.reference" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.reference">
 				<source>Reference</source>
 				<target>Referenzen</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.imageUpload.0" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.imageUpload.0">
 				<source>Image upload 1</source>
 				<target>Bildupload Kontaktperson 1</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.imageUpload.1" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.imageUpload.1">
 				<source>Image upload 2</source>
 				<target>Bildupload Kontaktperson 2</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultant.imageUpload.2" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultant.imageUpload.2">
 				<source>Image upload 3</source>
 				<target>Bildupload Kontaktperson 3</target>
 			</trans-unit>
 
 
 			<!-- consultantService -->
-			<trans-unit id="form.error.consultantService.furtherInformations" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.furtherInformations">
 				<source>Further informations</source>
 				<target>Weitere Informationen</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.qualification" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.qualification">
 				<source>Qualification</source>
 				<target>Qualifikation</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.subService" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.subService">
 				<source>Sub service</source>
 				<target>Spezielle Beratungsleistung</target>
 			</trans-unit>
 
 			<!-- contactPerson 0 -->
-			<trans-unit id="form.error.consultantService.contactPerson.0.salutation" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.0.salutation">
 				<source>Salutation</source>
 				<target>Anrede der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.0.title" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.0.title">
 				<source>Title</source>
 				<target>Titel der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.0.firstName" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.0.firstName">
 				<source>First name</source>
 				<target>Vorname der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.0.lastName" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.0.lastName">
 				<source>Last name</source>
 				<target>Nachname der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.0.company" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.0.company">
 				<source>Company</source>
 				<target>Firma der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.0.telephone" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.0.telephone">
 				<source>Telephone</source>
 				<target>Telefon der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.0.email" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.0.email">
 				<source>Email</source>
 				<target>E-Mail der Kontaktperson</target>
 			</trans-unit>
 
 
 			<!-- contactPerson 1 -->
-			<trans-unit id="form.error.consultantService.contactPerson.1.salutation" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.1.salutation">
 				<source>Salutation</source>
 				<target>Anrede der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.1.title" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.1.title">
 				<source>Title</source>
 				<target>Titel der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.1.firstName" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.1.firstName">
 				<source>First name</source>
 				<target>Vorname der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.1.lastName" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.1.lastName">
 				<source>Last name</source>
 				<target>Nachname der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.1.company" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.1.company">
 				<source>Company</source>
 				<target>Firma der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.1.telephone" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.1.telephone">
 				<source>Telephone</source>
 				<target>Telefon der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.1.email" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.1.email">
 				<source>Email</source>
 				<target>E-Mail der Kontaktperson</target>
 			</trans-unit>
 
 
 			<!-- contactPerson 2 -->
-			<trans-unit id="form.error.consultantService.contactPerson.2.salutation" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.2.salutation">
 				<source>Salutation</source>
 				<target>Anrede der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.2.title" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.2.title">
 				<source>Title</source>
 				<target>Titel der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.2.firstName" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.2.firstName">
 				<source>First name</source>
 				<target>Vorname der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.2.lastName" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.2.lastName">
 				<source>Last name</source>
 				<target>Nachname der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.2.company" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.2.company">
 				<source>Company</source>
 				<target>Firma der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.2.telephone" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.2.telephone">
 				<source>Telephone</source>
 				<target>Telefon der Kontaktperson</target>
 			</trans-unit>
-			<trans-unit id="form.error.consultantService.contactPerson.2.email" xml:space="preserve">
+			<trans-unit xml:space="preserve" id="form.error.consultantService.contactPerson.2.email">
 				<source>Email</source>
 				<target>E-Mail der Kontaktperson</target>
 			</trans-unit>
